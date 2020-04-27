@@ -90,7 +90,7 @@ body {
 }
 
 .logo {
-    width: 250px;
+    width: 219px;
 }
 
 .contain {
@@ -320,14 +320,36 @@ ul {
 }
 
 .showOnPhones {
-    
+    position: absolute; 
+    left: -999em;
     @include for-phone-only {
-        display: block;
+        position: relative;
+        left: 0;
       }
 }
 
+
 .phonecontent {
     margin: 2em;
+}
+
+.phonecard {
+    padding: 1em;
+    margin: 0;
+    border-left: 2px solid $red;
+    border-right: 2px solid $red;
+
+}
+
+.kodelmesCarSmall {
+    width: 150%;
+    top: -184px;
+    left: -445px;
+    position: relative;
+}
+
+.cardButtonPhone {
+    margin-top: 15px !important;
 }
 
 .phoneh1 {
@@ -348,12 +370,52 @@ ul {
 }
 
 .phonephoto {
-    margin-left: 140px;
+    margin-left: 30%;
 }
 
 .phonecar {
     
     width: 400px;
+}
+.seperator {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+.seperator {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 }
 .a-c{
     text-align:center;

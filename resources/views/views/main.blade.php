@@ -16,6 +16,51 @@
 
     </div>
 
+    <div class="showOnPhones">
+        
+    <div class="gSection phonecard">
+        <div class="rCircle">
+                <img class="icon" src="{{asset('images/dyler.png')}}" style="top: 22px; left: 13px">
+            </div>
+            <p class= "cardText">
+                Tapk dyleriu
+            </p>
+            <div class="cardButtonDiv">
+                <button class="cardButton cardButtonPhone">
+                    PLAČIAU
+                </button>
+            </div>
+    </div>
+    <div class="gSection phonecard">
+        <div class="rCircle">
+                <img class="icon" src="{{asset('images/irankis.png')}}" style="top: 14px; left: 13px">
+            </div>
+            <p class= "cardText">
+            Įrankiai
+            </p>
+            <div class="cardButtonDiv">
+                <button class="cardButton cardButtonPhone">
+                    PLAČIAU
+                </button>
+            </div>
+    </div>
+    
+    <div class="gSection phonecard">
+        <div class="rCircle">
+        <img class="icon" src="{{asset('images/pagalba.png')}}" style="top: 14px; left: 13px">
+            </div>
+            <p class= "cardText">
+                Pildyti paraišką
+            </p>
+            <div class="cardButtonDiv">
+                <button class="cardButton cardButtonPhone">
+                    PLAČIAU
+                </button>
+            </div>
+    </div>
+
+    </div>
+
     <div class="row hideOnPhones">
         <div class="col-sm-6">
             <h1 class="title bold">Sveiki atvykę į <span class="redT bold">Chip Tunning</span> failų servisą!</h1>
@@ -104,8 +149,8 @@
     </div>
     <div class="col-md-6 gSection">
         <div class="rcontent m-5">
-            <h1 class="title bold">Vis dar neturite paskyros?</h1>
-            <h1 class="title bold"><span class="redT bold gSectionRText">Registruotas vartotojas gali:</span></h1>
+            <h1 class="bold">Vis dar neturite paskyros?</h1>
+            <h1 class="bold"><span class="redT bold gSectionRText">Registruotas vartotojas gali:</span></h1>
             <ul>
                 <li class="registerListItem">Pirkti kreditus naudojant PayPal arba Paysera </li>
                 <li class="registerListItem">Įkelti ECU failus ir gauti modifikuotus atgal</li>
@@ -119,7 +164,7 @@
   </div>
   <div class="row">
         <div class="flex center mt-5">
-            <h1 class="title bold">
+            <h1 class="bold">
                 Kodėl mes?
             </h1>
         </div>
@@ -170,13 +215,16 @@
                 </div>
                 <div class="col-3">
                     <div class="visdar">
-                    <h1 class="title bold" style="float:right">Vis dar <span class="redT bold">Neįtikinome</span>?</h1>
+                    <h1 class=" bold" style="float:right">Vis dar <span class="redT bold">Neįtikinome</span>?</h1>
                     <p class= "text visdarText" style="float:right">
                     Esame atviri pasiūlymams. Susisiekite, pateikite savo sąlygas ir idėjas bendradarbiavimui.
                     </p>
                     <button class="cardButton registerFreeBtn" style="float:right">Susisiekti</button>
                     </div>
                     
+                </div>
+                <div class="showOnPhones">
+                    <img class="kodelmesCarSmall" src="{{asset('images/kodelmesCarSmall.png')}}">
                 </div>
             
 
