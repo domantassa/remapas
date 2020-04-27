@@ -2,6 +2,20 @@
 @section('content')
 
 <div class="contain">
+    <div class="row showOnPhones">
+        <div class="phonecontent">
+            <h1 class="title bold phoneh1">Sveiki atvykę į <span class="redT bold">Chip Tunning</span> failų servisą!</h1>
+            <p class="text phonetext">Siūlome aukščiausios kokybės individualiai kurtas ECU programas daugeliui automobilių.
+                Visos programos yra patikrintos naudojant dyno stendą. Dirbame <span class="redT bold"> 24/7</span>. Registruokitės ir gaukite 20 kreditų <span class="redT bold"> nemokamai </span>!</p>
+            <button class="phonebtn">Mūsų darbai</button>
+            <div class="phonephoto">
+                <img class="phonecar" src="{{asset('images/phonecar.png')}}" style="top: 22px; left: 13px">
+            </div>
+        </div>
+        
+
+    </div>
+
     <div class="row hideOnPhones">
         <div class="col-sm-6">
             <h1 class="title bold">Sveiki atvykę į <span class="redT bold">Chip Tunning</span> failų servisą!</h1>

@@ -318,3 +318,40 @@ ul {
         display: none;
       }
 }
+
+.showOnPhones {
+    
+    @include for-phone-only {
+        display: block;
+      }
+}
+
+.phonecontent {
+    margin: 4em;
+}
+
+.phoneh1 {
+    font-size: 35px;
+    white-space: normal;
+    width: 80%;
+}
+
+.phonebtn {
+    background-color: $red;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    padding: 10px;
+    border: 0;
+
+}
+
+.phonephoto {
+    margin-left: 100px;
+}
+
+.phonecar {
+    
+    width: 400px;
+}
