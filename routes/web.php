@@ -14,8 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('views.main');
+});
+
+Route::get('/dyler', function () {
     return view('homepage');
 });
+
 Route::get('kainos', function () {
     return view('views.kainos');
 });
