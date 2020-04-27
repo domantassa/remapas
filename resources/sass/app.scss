@@ -91,10 +91,6 @@ body {
     margin-top: 14px;
 }
 
-.icon {
-    position: relative;
-    width: 42px;
-}
 
 .cardText {
     text-transform: uppercase;
@@ -198,15 +194,30 @@ body {
 .modal-dialog{
     max-width:1000px !important;
 }
-.btn-red{
+.btnn{
     border-radius: 20px;
-    color:$white;
-    background-color: $red;
+    
     padding:5px 15px;
     margin: 5px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
+}
+.btn-red{
+    color:$white;
+    background-color: $red;
+    &:hover{
+        color:$white;
+    }
+}
+.btn-grey{
+    color:$red;
+    
+    background:$grey-dark;
+    &:hover{
+        color:$white;
+    }
+
 }
 
 .privacy{
@@ -225,3 +236,69 @@ body {
 .form-control::-moz-placeholder { color: white; font-family: inherit; }  /* Mozilla Firefox 19+ */
 .form-control:-ms-input-placeholder { color: white;  font-family: inherit;}  /* Internet Explorer 10-11 */
 .form-control::-ms-input-placeholder { color: white;  font-family: inherit;}
+
+
+.tab{
+
+    background: #191919;
+    color:$white;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius:25px  25px 0 0;
+    font-size:14px;
+    
+}
+@keyframes tab-transition{
+    0%{background: #191919;}
+    100%{background: $red; }  
+      
+  };
+.tab-active{
+    animation: tab-transition 0.25s ;
+    background: $red;
+          
+      
+ 
+
+}
+.tab-begin{
+    background: $red;
+}
+.content-begin{
+    height:300px;
+   display:block !important;
+}
+.content-active{
+    height:300px;
+     display:block !important;
+}
+.content{
+    
+    display:none;
+}
+.tab-content{
+    height:350px;
+    width:100%;
+    background: $grey-light;
+    border-radius: 0 0 25px  25px;
+}
+
+.red{
+    color:$red;
+}
+.icon{
+    margin:auto;
+
+}
+.rCircle-d {
+    width: 50px;
+    height: 50px;
+    background-color: $red;
+    border-radius: 50px;
+    margin: auto;
+    text-align:center;
+    margin-top: 14px;
+    z-index: -1;
+}
+

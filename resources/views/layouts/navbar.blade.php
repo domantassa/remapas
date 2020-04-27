@@ -25,7 +25,7 @@
         <a class="nav-link" href="#">Remapas support</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Kainos</a>
+        <a class="nav-link" href="kainos">Kainos</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">D.U.K</a>

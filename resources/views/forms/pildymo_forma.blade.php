@@ -190,8 +190,8 @@
         <div class="a-c">
           <div><input type="checkbox" id="privacy"><label for="privacy" class="privacy">I agree to Remapas.Lt storing my data to deal to this enqulry - <a>Privacy policy</a></label ></div>
         <!--<button type="button" class="btn btn-red" data-dismiss="modal">Reset</button>-->
-        <button type="button" class="btn btn-red" onclick="reset()">Reset</button>
-        <button type="button" class="btn btn-red">Submit Application</button>
+        <button type="button" class="btn btnn btn-red" onclick="reset()">Reset</button>
+        <button type="button" class=" btn btnn btn-red">Submit Application</button>
     </div>
       </div>
     </div>

@@ -10960,11 +10960,6 @@ body {
   margin-top: 14px;
 }
 
-.icon {
-  position: relative;
-  width: 42px;
-}
-
 .cardText {
   text-transform: uppercase;
   margin-top: 10px;
@@ -11070,15 +11065,31 @@ body {
   max-width: 1000px !important;
 }
 
-.btn-red {
+.btnn {
   border-radius: 20px;
-  color: #fff;
-  background-color: #dd2837;
   padding: 5px 15px;
   margin: 5px;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
+}
+
+.btn-red {
+  color: #fff;
+  background-color: #dd2837;
+}
+
+.btn-red:hover {
+  color: #fff;
+}
+
+.btn-grey {
+  color: #dd2837;
+  background: #161616;
+}
+
+.btn-grey:hover {
+  color: #fff;
 }
 
 .privacy a {
@@ -11121,5 +11132,85 @@ body {
 .form-control::-ms-input-placeholder {
   color: white;
   font-family: inherit;
+}
+
+.tab {
+  background: #191919;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 25px 25px 0 0;
+  font-size: 14px;
+}
+
+@-webkit-keyframes tab-transition {
+  0% {
+    background: #191919;
+  }
+
+  100% {
+    background: #dd2837;
+  }
+}
+
+@keyframes tab-transition {
+  0% {
+    background: #191919;
+  }
+
+  100% {
+    background: #dd2837;
+  }
+}
+
+.tab-active {
+  -webkit-animation: tab-transition 0.25s;
+          animation: tab-transition 0.25s;
+  background: #dd2837;
+}
+
+.tab-begin {
+  background: #dd2837;
+}
+
+.content-begin {
+  height: 300px;
+  display: block !important;
+}
+
+.content-active {
+  height: 300px;
+  display: block !important;
+}
+
+.content {
+  display: none;
+}
+
+.tab-content {
+  height: 350px;
+  width: 100%;
+  background: #282828;
+  border-radius: 0 0 25px 25px;
+}
+
+.red {
+  color: #dd2837;
+}
+
+.icon {
+  margin: auto;
+}
+
+.rCircle-d {
+  width: 50px;
+  height: 50px;
+  background-color: #dd2837;
+  border-radius: 50px;
+  margin: auto;
+  text-align: center;
+  margin-top: 14px;
+  z-index: -1;
 }
 
