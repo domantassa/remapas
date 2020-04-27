@@ -13,7 +13,7 @@
   --purple: #9561e2;
   --pink: #f66d9b;
   --red: #dd2837;
-  --orange: #f6993f;
+  --orange: #030303;
   --yellow: #ffed4a;
   --green: #38c172;
   --teal: #4dc0b5;
@@ -10947,7 +10947,7 @@ body {
   box-sizing: border-box;
   height: 250px;
   margin: 5px;
-  background-color: #282828;
+  background-color: #161616;
   border-radius: 30px;
 }
 
@@ -10987,6 +10987,130 @@ body {
 .cardButton:hover {
   background-color: #080808;
   transition: 0.25s;
+  color: #948585;
+}
+
+.a-c {
+  text-align: center;
+  margin: auto;
+}
+
+.form {
+  background: #00000000;
+}
+
+.form .modal-header {
+  border: none;
+  border-radius: 25px 25px 0 0;
+  background: #dd2837;
+  color: #fff;
+}
+
+.form .modal-header H5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form .modal-body {
+  border: none;
+  background-color: #282828;
+  color: #fff;
+  border-radius: 0 0 25px 25px;
+}
+
+.form .modal-footer {
+  border: none;
+  background-color: #282828;
+  color: #fff;
+}
+
+.form-text {
+  color: #fff;
+  background: #282828;
+  border: none;
+  border-radius: 50px;
+}
+
+.form-select {
+  color: #fff;
+  background: #282828;
+  border: 2px solid #dd2837;
+  border-radius: 50px;
+}
+
+.form-select:focus {
+  color: #fff;
+  background: #282828;
+  border: 2px solid #dd2837;
+  border-radius: 50px;
+}
+
+.form-text:focus {
+  color: #fff;
+  background: #282828;
+  border: none;
+  border-radius: 50px;
+}
+
+.form-col-group {
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+  border-radius: 15px;
+  background: #161616;
+}
+
+.form-col-group .header {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  color: #dd2837;
+}
+
+.modal-dialog {
+  max-width: 1000px !important;
+}
+
+.btn-red {
+  border-radius: 20px;
+  color: #fff;
+  background-color: #dd2837;
+  padding: 5px 15px;
+  margin: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.form-control::-webkit-input-placeholder {
   color: white;
+  font-family: inherit;
+}
+
+/* WebKit, Blink, Edge */
+
+.form-control:-moz-placeholder {
+  color: white;
+  font-family: inherit;
+}
+
+/* Mozilla Firefox 4 to 18 */
+
+.form-control::-moz-placeholder {
+  color: white;
+  font-family: inherit;
+}
+
+/* Mozilla Firefox 19+ */
+
+.form-control:-ms-input-placeholder {
+  color: white;
+  font-family: inherit;
+}
+
+/* Internet Explorer 10-11 */
+
+.form-control::-ms-input-placeholder {
+  color: white;
+  font-family: inherit;
 }
 
