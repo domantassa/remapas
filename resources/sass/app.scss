@@ -363,8 +363,10 @@ ul {
    
     background:$transparent;
     .modal-header{
+        text-align:center;
         H5
         {
+           
         font-size:20px;
         font-weight: bold;
         }
@@ -458,6 +460,15 @@ ul {
     }
 
 }
+.btn-grey-light{
+    color:$red;
+    
+    background:$grey-light;
+    &:hover{
+        color:$white;
+    }
+
+}
 
 .privacy{
 
@@ -535,4 +546,41 @@ ul {
     text-align:center;
     margin-top: 14px;
     z-index: -1;
+}
+
+
+.m-auto{
+    margin:auto;
+}
+.duk-card{
+    .modal-header{
+       
+        H5
+        {
+           
+        font-size:15px;
+       
+        }
+       
+    }
+    .modal-body{
+       
+        
+    }
+
+    @include for-phone-only {
+        margin: 1rem;
+      }
+
+    margin:auto;
+    width:900px;
+    margin-bottom:1rem;
+}
+
+.carr{
+
+    @include for-phone-only {
+        margin: 0;
+    display:none;
+    }
 }

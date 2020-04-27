@@ -22,7 +22,7 @@
         <a class="nav-link" href="#">Failų servisas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Tapti dyleriu</a>
+        <a class="nav-link" href="dyler">Tapti dyleriu</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Įrankiai</a>
@@ -34,7 +34,7 @@
         <a class="nav-link" href="kainos">Kainos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">D.U.K</a>
+        <a class="nav-link" href="duk">D.U.K</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Kontaktai</a>

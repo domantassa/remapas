@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('views.main');
 });
 
+Route::get('/duk', function () {
+    return view('views.duk');
+});
+
 Route::get('/dyler', function () {
     return view('homepage');
 });
