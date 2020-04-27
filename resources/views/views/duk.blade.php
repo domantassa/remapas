@@ -6,7 +6,7 @@
     <div class="row " style="padding-top:5rem;padding-bottom:5rem">
         
         <div class="col align-self-center">
-            <h2 class=" " >Dažniausiai užduodami klausimai</h2>
+            <h2 class=" " style="font-weight:bold" >Dažniausiai užduodami klausimai</h2>
             
             <h3 class="red"> Jei dar turite klausimų, susisiekite!</h3>
             <a href="{{URL::to('susisiekite')}}" class="btn btnn btn-grey-light"> Susisiekite </a>

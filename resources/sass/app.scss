@@ -1,5 +1,7 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
 
 // Variables
 @import 'variables';
@@ -26,6 +28,7 @@
 button:focus {outline:0;}
 
 body {
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
    background-color: #161616;
    color: #ffffff;
@@ -230,8 +233,16 @@ ul {
     width: 1em;
     margin-left: -1em;
   }
+  .loginListItem::before {
+    content: "\2022";
+    color: $white;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
 
-.registerListItem {
+.registerListItem, .loginListItem {
     color: white;
     font-size: 20px;
 }
@@ -517,6 +528,21 @@ ul {
     color:$red;
     
     background:$grey-dark;
+    &:hover{
+        color:$white;
+    }
+
+}
+.btn-black{
+    border-radius: 8px;
+    
+    margin: 5px;
+    text-transform: uppercase;
+    
+    letter-spacing: 2px;
+    color:$red;
+    
+    background:#161616;
     &:hover{
         color:$white;
     }

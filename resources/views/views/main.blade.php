@@ -133,20 +133,28 @@
         </div>
     </div>
   </div>
-  <div class="row">
+ 
+  
+    <div class="row">
     <div class="col-md-6 rSection">
         <div class="rcontent m-5">
-        <div class="form-group">
-            <label for="exampleInputEmail1"></label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1"></label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <button type="submit" class="cardButton">Submit</button>
-        </div>
+
+        <h1 class="bold">Jau turite paskyra?</h1>
+            <h1 class="bold"><span class="redT bold gSectionRText" style="color:white !important">Prisijungite prie savo failų sistemos</span></h1>
+            <ul>
+        <li class="loginListItem">Siūlome aukščiausios kokybės individualiai kurtas ECU programas daugeliui automobilių.</li>
+
+<li class="loginListItem">Visos programos yra patikrintos naudojant dyno stendą.</li><li class="loginListItem"> Dirbame 24/7.</li>
+</ul>
+   
+
+     
+        <a href="https://files.remapas.lt/" class="btn btn-black" style="text-decoration:none">Prisijungti</a>
+
     </div>
+    </div>
+   
+  
     <div class="col-md-6 gSection">
         <div class="rcontent m-5">
             <h1 class="bold">Vis dar neturite paskyros?</h1>
@@ -157,7 +165,7 @@
                 <li class="registerListItem">Modifikuoti failai yra aukščiausios kokybės, saugųs ir patikrinti naudojant dyno stendą</li>
                 <li class="registerListItem">Kiekvienas failas yra individualiai modifikuotas pagal Jūsų automobilį siekiant išgauti geriausius rezultatus</li>
             </ul>
-            <button class="cardButton registerFreeBtn">Registruotis nemokamai</button>
+            <button class="btn btn-black">Registruotis nemokamai</button>
         </div>
     </div>
     
