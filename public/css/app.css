@@ -11251,6 +11251,7 @@ ul .registerListItem::before {
 }
 
 .form .modal-header {
+  text-align: center;
   border: none;
   border-radius: 25px 25px 0 0;
   background: #dd2837;
@@ -11345,6 +11346,15 @@ ul .registerListItem::before {
 }
 
 .btn-grey:hover {
+  color: #fff;
+}
+
+.btn-grey-light {
+  color: #dd2837;
+  background: #282828;
+}
+
+.btn-grey-light:hover {
   color: #fff;
 }
 
@@ -11464,5 +11474,32 @@ ul .registerListItem::before {
   text-align: center;
   margin-top: 14px;
   z-index: -1;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.duk-card {
+  margin: auto;
+  width: 900px;
+  margin-bottom: 1rem;
+}
+
+.duk-card .modal-header H5 {
+  font-size: 15px;
+}
+
+@media (max-width: 599px) {
+  .duk-card {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 599px) {
+  .carr {
+    margin: 0;
+    display: none;
+  }
 }
 
