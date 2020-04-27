@@ -11081,6 +11081,15 @@ body {
   letter-spacing: 2px;
 }
 
+.privacy a {
+  color: #dd2837;
+  text-decoration: none;
+}
+
+.col-form {
+  padding: 0px 7.5px;
+}
+
 .form-control::-webkit-input-placeholder {
   color: white;
   font-family: inherit;

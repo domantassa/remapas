@@ -3,6 +3,15 @@
   Launch demo modal
 </button>
 
+
+
+
+
+
+
+ 
+
+
 <!-- Modal -->
 <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered " role="document">
@@ -19,7 +28,7 @@
         <form>
             <div class="row">
 
-                <div class="col ">
+                <div class="col-sm col-form ">
                  
                   <div class="form-col-group">
                         <div class="header a-c">
@@ -66,7 +75,7 @@
                     </div>
                 
                 
-                  <div class="col ">
+                  <div class="col-sm col-form ">
                   <div class="form-col-group">
                         <div class="header a-c">
                         Company details
@@ -86,11 +95,20 @@
                         <div class="form-group">    
                             <input type="text" class="form-control form-text" placeholder="Company desciption">
                         </div>
+
                         <div class="form-group">    
-                            <input type="text" class="form-control form-select" placeholder="Own Tools?">
+                            <select class="form-control form-select" id="Own Tools?"   >
+                               <option value="" id="default select" selected disabled hidden>Own Tools?</option>
+                               <option value="true"  >Yes</option>
+                                <option value="false"  >No</option>
+                          </select>
                         </div>
                         <div class="form-group">    
-                            <input type="text" class="form-control form-select" placeholder="Already Have Tools?">
+                            <select class="form-control form-select" id="Already Have Tools?"   >
+                            <option value="" id="default select" selected disabled hidden>Already Have Tools?</option>
+                            <option value="true"  >Yes</option>
+                            <option value="false"  >No</option>
+                          </select>
                         </div>
                     
                     </div>
@@ -101,7 +119,7 @@
                   </div>
 
 
-                  <div class="col ">
+                  <div class="col-sm col-form ">
                   <div class="form-col-group">
                         <div class="header a-c">
                         Billing address
@@ -119,7 +137,9 @@
                             <input type="text" class="form-control form-text" placeholder="Country/state">
                         </div>
                         <div class="form-group">    
-                            <input type="text" class="form-control form-select" placeholder="Select Country">
+                            <select class="form-control form-select" id="Select Country"  >
+                          @include('forms.countries')  
+                          </select>
                         </div>
 
 
@@ -148,15 +168,17 @@
                         <div class="form-group">    
                             <input type="text" class="form-control form-text" placeholder="Country/state">
                         </div>
+
                         <div class="form-group">    
-                            <input type="text" class="form-control form-select" placeholder="Select Country">
+                          
+                            <select class="form-control form-select" id="Select Country"  >
+                          @include('forms.countries')  
+                          </select>
+                          
                         </div>
-
-                    </div>
-
-
-                  </div>
-
+                        
+</div>
+</div>
 
 
         </form>
@@ -166,10 +188,38 @@
       </div>
       <div class="modal-footer">
         <div class="a-c">
-        <button type="button" class="btn btn-red" data-dismiss="modal">Reset</button>
+          <div><input type="checkbox" id="privacy"><label for="privacy" class="privacy">I agree to Remapas.Lt storing my data to deal to this enqulry - <a>Privacy policy</a></label ></div>
+        <!--<button type="button" class="btn btn-red" data-dismiss="modal">Reset</button>-->
+        <button type="button" class="btn btn-red" onclick="reset()">Reset</button>
         <button type="button" class="btn btn-red">Submit Application</button>
     </div>
       </div>
     </div>
   </div>
 </div>
+<script>
+
+function reset(){
+$inputs_text = $(".form-text");
+$inputs_select = $(".form-select");
+$inputs_text.each(function() {
+  $( this ).val( "" );
+});
+
+$inputs_select.each(function() {
+$placeholder = this.id;
+
+$html='<option value="" selected disabled hidden>'+$placeholder+'</option>';
+
+$( this ).html($( this ).html( )+$html );
+});
+
+}
+
+
+
+
+
+
+</script>
+

@@ -125,7 +125,7 @@ body {
     margin:auto;
 }
 .form{
-    
+   
     background:$transparent;
     .modal-header{
         H5
@@ -158,7 +158,7 @@ body {
     border-radius:50px;
     
 }
-.form-select{
+.form-select {
     color:$white;
     background:$grey-light;
     border:2px solid $red;
@@ -209,6 +209,17 @@ body {
     letter-spacing: 2px;
 }
 
+.privacy{
+
+    a{
+        color:$red;
+        text-decoration: none;
+    }
+}
+.col-form
+{
+    padding:0px 7.5px;
+}
 .form-control::-webkit-input-placeholder { color: white; font-family: inherit; }  /* WebKit, Blink, Edge */
 .form-control:-moz-placeholder { color: white;  font-family: inherit;}  /* Mozilla Firefox 4 to 18 */
 .form-control::-moz-placeholder { color: white; font-family: inherit; }  /* Mozilla Firefox 19+ */
