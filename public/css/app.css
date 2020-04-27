@@ -10887,8 +10887,34 @@ button:focus {
 }
 
 body {
+  overflow-x: hidden;
   background-color: #161616;
   color: #ffffff;
+}
+
+* {
+  z-index: 10;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #dd2837;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dd2837;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -10907,6 +10933,10 @@ body {
   font-weight: bold;
 }
 
+.title {
+  white-space: nowrap;
+}
+
 .nav-link:hover {
   color: #dd2837;
 }
@@ -10915,6 +10945,10 @@ body {
   margin-left: 15px;
   font-size: 16px;
   color: #ffffff;
+}
+
+.visdar {
+  margin-left: -7rem;
 }
 
 .logo {
@@ -10928,7 +10962,6 @@ body {
 
 .textContainer {
   margin-top: 20px;
-  width: 35%;
 }
 
 .text {
@@ -10958,6 +10991,30 @@ body {
   border-radius: 50px;
   margin: auto;
   margin-top: 14px;
+  z-index: -1;
+}
+
+.bigRCircle {
+  width: 350px;
+  height: 350px;
+  border-radius: 360px;
+  z-index: -1;
+  margin-left: 400px;
+  margin-top: 100px;
+}
+
+@media (min-width: 1200px) {
+  .bigRCircle {
+    margin-left: 200px;
+  }
+}
+
+.car {
+  position: relative;
+  width: 800px;
+  left: -240px;
+  top: 51px;
+  z-index: 0;
 }
 
 .icon {
@@ -10984,9 +11041,145 @@ body {
   padding: 5px 30px;
 }
 
+.redButton {
+  box-sizing: border-box;
+  background-color: #dd2837;
+  color: white;
+  border-radius: 50px;
+  text-transform: uppercase;
+  padding: 10px 60px;
+  margin: 25px;
+  border: none;
+  margin: auto;
+  margin-top: 5px;
+  width: 310px;
+  letter-spacing: 2px;
+}
+
 .cardButton:hover {
   background-color: #080808;
   transition: 0.25s;
   color: white;
+}
+
+.rSection {
+  background-color: #dd2837;
+}
+
+.gSection {
+  background-color: #222222;
+}
+
+.gSectionRText {
+  vertical-align: top;
+  margin-top: -10px;
+  font-size: 25px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 1.2em;
+}
+
+ul .registerListItem::before {
+  content: "\2022";
+  color: #dd2837;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.registerListItem {
+  color: white;
+  font-size: 20px;
+}
+
+.registerFreeBtn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  border-radius: 20px;
+  margin-top: 1em;
+}
+
+.flex {
+  display: flex;
+}
+
+.kodelmes {
+  margin-left: 6em;
+  margin-top: 2em;
+  margin-right: 0;
+}
+
+@media (min-width: 900px) {
+  .kodelmes {
+    margin-left: 13em;
+  }
+}
+
+.kodelmesCircle {
+  float: right;
+  margin: 0;
+  vertical-align: middle;
+  margin-right: 1em;
+}
+
+.KodelmesCar {
+  margin: auto;
+  margin-top: 3rem;
+  width: 0px;
+}
+
+@media (min-width: 900px) {
+  .KodelmesCar {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .KodelmesCar {
+    width: 800px;
+  }
+}
+
+.kodesmesNumber {
+  font-size: 40px;
+  position: relative;
+  left: 0.55em;
+  top: 0.1em;
+}
+
+.circlePlace {
+  margin-top: 1em;
+  vertical-align: middle;
+  display: inline-block;
+  width: 10%;
+}
+
+.visdarText {
+  text-align: right;
+  font-size: 19px;
+}
+
+.kodelmesText {
+  margin-top: 2em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em;
+  width: 79%;
+}
+
+.center {
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+@media (max-width: 599px) {
+  .hideOnPhones {
+    display: none;
+  }
 }
 
