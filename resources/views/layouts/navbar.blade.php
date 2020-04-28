@@ -13,31 +13,31 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Mūsų darbai <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{{route('dyler',APP::getLocale())}}">@lang('Mūsų darbai') <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Namai</a>
+        <a class="nav-link" href="{{route('home',APP::getLocale())}}">@lang('Namai')</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Failų servisas</a>
+        <a class="nav-link" href="{{route('home',APP::getLocale())}}">@lang('Failų servisas')</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="dyler">Tapti dyleriu</a>
+        <a class="nav-link" href="{{route('dyler',APP::getLocale() )}}">@lang('Tapti dyleriu')</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="tools">Įrankiai</a>
+        <a class="nav-link" href="{{route('tools',APP::getLocale())}}">@lang('Įrankiai')</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Remapas support</a>
+        <a class="nav-link" href="{{route('dyler',APP::getLocale())}}">@lang('Remapas support')</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="kainos">Kainos</a>
+        <a class="nav-link" href="{{route('kainos',APP::getLocale())}}">@lang('Kainos')</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="duk">D.U.K</a>
+        <a class="nav-link" href="{{route('duk',APP::getLocale())}}">@lang('D.U.K')</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Kontaktai</a>
+        <a class="nav-link" href="{{route('dyler',APP::getLocale())}}">@lang('Kontaktai')</a>
       </li>
     </ul>
   </div>

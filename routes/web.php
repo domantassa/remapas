@@ -12,22 +12,43 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::redirect('/','/en');
+Route::redirect('','/en');
+Route::redirect('/dyler','/en/dyler');
+Route::redirect('/kainos','/en/kainos');
+Route::redirect('/tools','/en/tools');
 
-Route::get('/', function () {
-    return view('views.main');
-});
+Route::group(['prefix' => '{locale}'],function($prefix)
+{
+    /*
+if($prefix!='en' && $prefix!='lt')
+{
 
-Route::get('/duk', function () {
-    return view('views.duk');
-});
 
-Route::get('/dyler', function () {
-    return view('homepage');
-});
+ return 1;
+}*/
+    Route::get('/', function () {
+        
+        return view('views.main');
+    })->name('home');
 
-Route::get('kainos', function () {
-    return view('views.kainos');
-});
-Route::get('/tools', function () {
-    return view('views.tools');
+    Route::get('duk', function () {
+      //  App::setLocale();
+        return view('views.duk');
+    })->name('duk');
+
+    Route::get('dyler', function () {
+        //App::setLocale();
+        return view('homepage');
+    })->name('dyler');
+
+    Route::get('kainos', function () {
+       // App::setLocale();
+        return view('views.kainos');
+    })->name('kainos');
+    Route::get('tools', function () {
+        //App::setLocale();
+        return view('views.tools');
+    })->name('tools');
+
 });

@@ -8,7 +8,9 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-
+@mixin for-phone-and-tablet {
+    @media (max-width: 1200px) { @content; }
+  }
 @mixin for-phone-only {
     @media (max-width: 599px) { @content; }
   }
@@ -695,23 +697,87 @@ ul {
 }
 
 .failu-servisas{
-    min-height: 500px;
+  
+    
+
+    min-height: 800px;
     background:url($url+"images/fonasapie.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity:0.2;
+  /* max-width: 1000px;*/
+    .overlay{
+        
+        background: rgb(40, 40, 40,0.5);
+        height:100%;
+        width:100%;
+  
+    }
+    
     .title{
+       
+    
         font-weight: bold;
         font-size:20px;
         color:$red;
-        opacity:1;
+       
     }
     .body{
+        text-align:center;
+
         margin-bottom:2rem;
         font-size:15px;
         color:$white;
-        opacity:1;
+        
     }
     margin-bottom:5rem;
+}
+
+.mob-cont{
+    @include for-phone-and-tablet {
+        margin:1rem;
+      }
+}
+.lang{
+    .btn:focus{
+        outline:0;
+        box-shadow:none;
+    }
+    position:absolute;
+    right:0;
+    top:200px;
+    color:#000;
+    background:#fff;
+    border-radius: 5px 0  0 5px;  
+            .select{
+            color:#000;
+            font-size:18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            
+        }
+        .option{
+            text-transform: uppercase;
+            font-weight: bold;
+            display:block;
+            color:#000;
+            background:#fff;
+            font-size:18px;
+            @keyframes mymove{
+                from{
+                    
+                    opacity:0
+                };
+                to{
+                    
+                    opacity:1
+                };
+            }
+            animation: mymove 1s;
+            display:none;
+
+        }
+}
+.tabheader{
+    font-size:18px;
 }

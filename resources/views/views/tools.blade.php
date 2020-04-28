@@ -23,7 +23,7 @@
 
     <div class="row">
         
-            <div class="tab-content failu-servisas">
+            <div class="tab-content tools">
                 <div id="content-1" class="content content-begin p-5">
                        
                         <div class="title">

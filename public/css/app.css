@@ -11544,26 +11544,94 @@ ul .registerListItem::before {
 }
 
 .failu-servisas {
-  min-height: 500px;
+  min-height: 800px;
   background: url("http://127.0.0.1:8000/images/fonasapie.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: 0.2;
+  /* max-width: 1000px;*/
   margin-bottom: 5rem;
+}
+
+.failu-servisas .overlay {
+  background: rgba(40, 40, 40, 0.5);
+  height: 100%;
+  width: 100%;
 }
 
 .failu-servisas .title {
   font-weight: bold;
   font-size: 20px;
   color: #dd2837;
-  opacity: 1;
 }
 
 .failu-servisas .body {
+  text-align: center;
   margin-bottom: 2rem;
   font-size: 15px;
   color: #fff;
-  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .mob-cont {
+    margin: 1rem;
+  }
+}
+
+.lang {
+  position: absolute;
+  right: 0;
+  top: 200px;
+  color: #000;
+  background: #fff;
+  border-radius: 5px 0 0 5px;
+}
+
+.lang .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.lang .select {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.lang .option {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  color: #000;
+  background: #fff;
+  font-size: 18px;
+  -webkit-animation: mymove 1s;
+          animation: mymove 1s;
+  display: none;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mymove {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.tabheader {
+  font-size: 18px;
 }
 
