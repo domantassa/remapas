@@ -246,5 +246,104 @@
 
 </div>
 
+<div class="container mt-5" style="margin:auto;max-width:1000px">
+    <div class="row">
+
+        <div class="col tab tab-begin" id="1"> <div class="rCircle-d "><img class="  my-2"  src="{{asset('images/info.png')}}" style="height:30px"> </div>
+        <div class="p-1" >APIE MUS</div>
+    
+        </div>
+        <div class="col tab" id="2"> <div class="rCircle-d "><img class="  my-2"  src="{{asset('images/dyler.png')}}"  style="height:30px"></div>
+    
+        <div  class="p-1" >TAPK DYLERIU</div>
+        </div>
+        <div class="col tab" id="3"> <div class="rCircle-d "><img class="  my-2"  src="{{asset('images/klausimas.png')}}" style="height:30px">    </div>
+         <div  class="p-1" >PAGALBOS SISTEMA</div>
+
+    </div>
+      
+      
+    </div>
+
+    <div class="row">
+        
+            <div class="tab-content failu-servisas">
+
+
+            <div id="content-1" class="content p-5"> 
+                <div class="title">
+                     as
+                     </div>
+                 
+                     <div class="body">
+                     Suteikiame galimybę tapti mūsų partneriu versle, įsigyti profesionalią įrangą darbui, gauti pagalbą, patarimus, konsultacijas bei reikalingas pamokas tam, kad jūsų teikiamos paslaugos taptų aukščiausios kokybės. Šią galimybę suteikiame kiekvienam chiptuneriui, tiek pradedančiajam, tiek pažengusiam profesionalui. Pasinaudokite galimybe savo verslą pakelti į aukščiausią lygmenį, gauti profesionaliausius patarimus, atsakymus į visus klausimus be užuolankų. Padėsime ir konsultuosime visose srityse, pradedant profesionalia diagnostika bei automobilio techninės būklės įvertinimo prieš/po chip tuning, baigiant subtilybėmis nuskaitinėjant bei įrašinėjant failus, reklama, įvaizdžiu bei komunikacija su klientais. Trumpai tariant – jūsų problemos versle taps mūsų problemomis. Būtinos sąlygos – įrangos komplekto įsigijimas iš mūsų rankų bei metinė support narystė mūsų bendruomenėje. Kiekvienas partneris turi galimybę kartu tapti ir partneriu-atstovu, tokiu būdų gauti dar geresnes failų kainas ir daug kitų papildomų privalumų.
+
+Noriu tapti partneriu (landing page į anketą, kurią reikia užpildyti norint tapti slave user). Anketoje turi nurodyti vardą pavardę, trumpai apie savo žinias ir patirtį, kokios pagalbos daugiausiai reikės iš mūsų, su kokiais auto žada dirbti ar dirba daugiausiai, kokia turima ir trūkstama įranga, kontaktai kaip susisiekti su juo).
+
+Suteikiame galimybę tapti partneriu-atstovu – prekiauti mūsų failais bei įranga, tačiau tai daryti savo vardu. Suteiksime website platformą darbui, kurią galėsite naudoti savo reikmėms arba failų prekybai. Apie visus oficialius partnerius-atstovus skelbsime visuose savo reklamos kanaluose, taip padėsime jums augti. Tokiu būdu būdamas partneriu turėsite unikalią galimybę papildomai užsidirbti, gauti dideles nuolaidas įsigyjant failus savo reikmėms. Atkreipiame dėmesį, kad norint tapti partneriu-atstovu būtina įsigyti slave įrangos paketą. Dėl galimybės tapti partneriu-atstovu kreipkitės tiesiogiai į mus, kiekvienu atveju individualiai aptariamos abiems pusėms palankios sąlygos bei galimybės.
+
+Tiek partneriu-atstovu, tiek partneriu gali tapti kiekvienas servisas ir pradedantysis. Prisijunkite prie augančios mūsų bendruomenes ir padėkite savo versui augti kartu su mumis, tapkite tikru profesionalu! Mes padėsime jums kasdien tobulėti galios didinimo srityje!
+
+
+                     </div>
+                </div>
+
+
+                        
+            <div id="content-2" class="content p-5"> 
+                <div class="title">
+                     as
+                     </div>
+                 
+                     <div class="body">
+                    as
+                     </div>
+                </div>
+
+
+                <div id="content-3" class="content p-5"> 
+                <div class="title">
+                     as
+                     </div>
+                 
+                     <div class="body">
+                    as
+                     </div>
+                </div>
+            </div>
+            </div>
+
+
+        
+    </div>
+
+</div>
+
+<script>
+
+ $( ".tab" ).click(function() {
+
+        
+    $("#content-"+$(".tab-begin").attr('id')).removeClass("content-begin");
+    $(".tab-begin").removeClass("tab-begin");
+   
+
+        $("#content-"+$( ".tab-active" ).attr('id')).removeClass("content-active");
+        $(".tab-active").removeClass("tab-active");
+    
+        
+
+     
+    
+     $( this).addClass( "tab-active" );
+  $( this).addClass( "tab-active" );
+    // alert(this);
+    $("#content-"+$( ".tab-active" ).attr('id')).addClass( "content-active" );
+    
+
+
+
+});
+</script>
 
 @endsection

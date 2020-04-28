@@ -11465,12 +11465,12 @@ ul .registerListItem::before {
 }
 
 .content-begin {
-  height: 300px;
+  min-height: 300px;
   display: block !important;
 }
 
 .content-active {
-  height: 300px;
+  min-height: 300px;
   display: block !important;
 }
 
@@ -11479,7 +11479,7 @@ ul .registerListItem::before {
 }
 
 .tab-content {
-  height: 350px;
+  min-height: 350px;
   width: 100%;
   background: #282828;
   border-radius: 0 0 25px 25px;
@@ -11525,5 +11525,45 @@ ul .registerListItem::before {
     margin: 0;
     display: none;
   }
+}
+
+.tools .title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #dd2837;
+}
+
+.tools .body {
+  margin-bottom: 2rem;
+  font-size: 15px;
+  color: #fff;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.failu-servisas {
+  min-height: 500px;
+  background: url("http://127.0.0.1:8000/images/fonasapie.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  margin-bottom: 5rem;
+}
+
+.failu-servisas .title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #dd2837;
+  opacity: 1;
+}
+
+.failu-servisas .body {
+  margin-bottom: 2rem;
+  font-size: 15px;
+  color: #fff;
+  opacity: 1;
 }
 

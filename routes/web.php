@@ -28,3 +28,6 @@ Route::get('/dyler', function () {
 Route::get('kainos', function () {
     return view('views.kainos');
 });
+Route::get('/tools', function () {
+    return view('views.tools');
+});

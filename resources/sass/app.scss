@@ -604,11 +604,11 @@ ul {
     background: $red;
 }
 .content-begin{
-    height:300px;
+    min-height:300px;
    display:block !important;
 }
 .content-active{
-    height:300px;
+    min-height:300px;
      display:block !important;
 }
 .content{
@@ -616,7 +616,7 @@ ul {
     display:none;
 }
 .tab-content{
-    height:350px;
+  min-height:350px;
     width:100%;
     background: $grey-light;
     border-radius: 0 0 25px  25px;
@@ -671,4 +671,47 @@ ul {
         margin: 0;
     display:none;
     }
+}
+
+.tools{
+
+
+    .title{
+        font-weight: bold;
+        font-size:20px;
+        color:$red;
+
+    }
+    .body{
+        margin-bottom:2rem;
+        font-size:15px;
+        color:$white;
+
+    }
+}
+
+.bold{
+    font-weight:bold;
+}
+
+.failu-servisas{
+    min-height: 500px;
+    background:url($url+"images/fonasapie.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity:0.2;
+    .title{
+        font-weight: bold;
+        font-size:20px;
+        color:$red;
+        opacity:1;
+    }
+    .body{
+        margin-bottom:2rem;
+        font-size:15px;
+        color:$white;
+        opacity:1;
+    }
+    margin-bottom:5rem;
 }

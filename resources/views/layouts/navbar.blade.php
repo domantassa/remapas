@@ -25,7 +25,7 @@
         <a class="nav-link" href="dyler">Tapti dyleriu</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Įrankiai</a>
+        <a class="nav-link" href="tools">Įrankiai</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Remapas support</a>
