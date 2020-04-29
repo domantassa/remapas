@@ -27,52 +27,52 @@
                 <div id="content-1" class="content content-begin p-5">
                        
                         <div class="title">
-                        Flex modulis
+                        @lang('Flex modulis')
                         </div>
                         <div class="body">
-                        Šis prietaisas naudojamas nesudėtingam automobilio programinės įrangos tiuningavimui, perprogramavimui ar modifikavimui, interneto sąsaja atskleidžia pilną šio prietaiso potencialą. Prijungimas vyksta tiesiogiai per OBD jungtį. Pažangiems remonto darbams atlikti naudokite Flexbox modulį, kuris leidžia programuoti BDM, Bootloader, JTAG ir AUD režimais. Prietaisas yra pajėgus aptikti galimas prisijungimo arba ryšio klaidas.
+                        @lang('Šis prietaisas naudojamas nesudėtingam automobilio programinės įrangos tiuningavimui, perprogramavimui ar modifikavimui, interneto sąsaja atskleidžia pilną šio prietaiso potencialą. Prijungimas vyksta tiesiogiai per OBD jungtį. Pažangiems remonto darbams atlikti naudokite Flexbox modulį, kuris leidžia programuoti BDM, Bootloader, JTAG ir AUD režimais. Prietaisas yra pajėgus aptikti galimas prisijungimo arba ryšio klaidas.')
                         </div>
                         <div class="title">
-                        Techniniai parametrai
+                        @lang('Techniniai parametrai')
                         </div>
                     
                         <div class="body">
-                        - USB jungtis<br>
-- LED indikatoriai<br>
-- Maitinimas: 12V 5A/24V 2.5A<br>
-- Komunikacijos jungtys: ISO 15765:2 x CAN; ISO 99141-2 & ISO 14230: 2 x K-LINE, 1xL-LINE; Ethernet ; SAE J1850 PWM, VPW; SAE J1708<br>
-- Universali jungtis: Universalios 15 In/Out jungtys,<br>
-- Įtampos: vidinė 3.3V- 5V, išorinė 1.8 – 5.5V<br>
+- @lang('USB jungtis')<br>
+- @lang('LED indikatoriai')<br>
+- @lang('Maitinimas'): 12V 5A/24V 2.5A<br>
+- @lang('Komunikacijos jungtys'): ISO 15765:2 x CAN; ISO 99141-2 & ISO 14230: 2 x K-LINE, 1xL-LINE; Ethernet ; SAE J1850 PWM, VPW; SAE J1708<br>
+- @lang('Universali jungtis: Universalios 15 In/Out jungtys,')<br>
+- @lang('Įtampos: vidinė 3.3V- 5V, išorinė 1.8 – 5.5V')<br>
 - JTAG, BDM, AUD, UART<br>
-- Apsaugos: ESD 1kV, viršįtampiai, perkrovos, perkaitimas, poliarizacija, USB galvaninė atskyra.<br>
+- @lang('Apsaugos: ESD 1kV, viršįtampiai, perkrovos, perkaitimas, poliarizacija, USB galvaninė atskyra.')<br>
 
 
                         </div>
                         <div class="title">
-                        Palaikomu automobiliu sarasa galite rasti cia :
+                        @lang('Palaikomu automobiliu sarasa galite rasti cia :')
                      </div>
                  
                      <div class="body">
-                    <select class="form-select form-control" style="max-width:200px" ><option>Raskite automobilį</option></select>
+                    <select class="form-select form-control" style="max-width:200px" ><option>@lang('Raskite automobilį')</option></select>
                      </div>
                      <div class="title">
-                     Kodėl mes renkamės magpro?
+                     @lang('Kodėl mes renkamės magpro?')
                      </div>
                  
                      <div class="body">
                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac auctor augue mauris augue neque. Lacinia at quis risus sed. Pulvinar elementum integer enim neque volutpat. Massa placerat duis ultricies lacus sed turpis. Proin sed libero enim sed faucibus turpis in eu mi. Eget sit amet tellus cras adipiscing. Tortor consequat id porta nibh venenatis cras sed. Pharetra vel turpis nunc eget lorem dolor. Porta lorem mollis aliquam ut. Nibh praesent tristique magna sit amet purus gravida quis blandit.
                      </div>
                      <div class="title">
-                     Bazinis rinkinys <br>
+                     @lang('Bazinis rinkinys') <br>
                      </div>
                  
                      <div class="body">
                         <div class="row">
                             <div class="col-sm-8">
-                            <p>Paprasčiausias pasirinkimas norint dirbti su automobiliais per obd jungtį bei neardant valdymo bloko. Turi galimybe dirbti su beveik visais naujausiais automobilių variklių ir automatinių pavarų dėžių blokais.  <br>
+                            <p>@lang('Paprasčiausias pasirinkimas norint dirbti su automobiliais per obd jungtį bei neardant valdymo bloko. Turi galimybe dirbti su beveik visais naujausiais automobilių variklių ir automatinių pavarų dėžių blokais.')<br>
                             <br>
                             <span class="red">FLEX SLAVE KIT + get free Remapas support subscribtion for 1 years + 200crd</span> <br><br>
-                            <span class="bold">Kaina : 2500 EUR + PVM </span>
+                            <span class="bold">@lang('Kaina') : 2500 EUR + PVM </span>
                             </p>
                             </div>
                             
@@ -84,19 +84,19 @@
                      </div>
 
                      <div class="title">
-                     Vidutinis rinkinys<br>
+                     @lang('Vidutinis rinkinys')<br>
                      </div>
                  
                      <div class="body">
                         <div class="row">
                             <div class="col-sm-8">
-                                <p>šis rinkinys skirtas dirbantiems su naujesniais Delphi, Marelli, Delco, Continental/Siemens, Bosch edc16 ir kitais valdymo blokais, kurių  nuskaitymas atliekamas tiesiai jungiantis į jį. Tad prie Bazinio rinkinio pridedame universalų stovą su adatomis, bei bdm adapteriais.
-                                <br>Turi galimybe dirbti su beveik visais naujausiais automobilių variklių ir automatinių pavarų dėžių blokais.  
+                                <p>@lang('šis rinkinys skirtas dirbantiems su naujesniais Delphi, Marelli, Delco, Continental/Siemens, Bosch edc16 ir kitais valdymo blokais, kurių  nuskaitymas atliekamas tiesiai jungiantis į jį. Tad prie Bazinio rinkinio pridedame universalų stovą su adatomis, bei bdm adapteriais.')
+                                <br>@lang('Turi galimybe dirbti su beveik visais naujausiais automobilių variklių ir automatinių pavarų dėžių blokais.')  
 
  <br>
  <br>
                                 <span class="red">FLEX SLAVE KIT + FLEXible Bench+ get free remapas support subscribtion for 1 years + 250crd .</span> <br><br>
-                                <span class="bold">Kaina : 3410 EUR + PVM  </span>
+                                <span class="bold">@lang('Kaina') : 3410 EUR + PVM  </span>
                                
                                 </p>
                             </div>
@@ -107,20 +107,20 @@
                         </div>
                      </div>
                      <div class="title">
-                     Pilniausias rinkinys
+                     @lang('Pilniausias rinkinys')
                      <br>
                      </div>
                  
                      <div class="body">
                         <div class="row">
                             <div class="col-sm-8">
-                                <p>šiame rinkinyje papildomai nei Vidutiniame rinkinyje diagnostinė įranga, kurios pagalba jūs galėsite daugiau nei 80 automobilių modelių, padaryti log failus, reikiamus prieš individualų galios didinimą bei atlikti reikiamus reset, adaptacijas prieš ir po programavimo darbų. Be diagnostikos įrangos programavimo darbai neįsivaizduojami, tada šis pasiūlymas tinka visiems programuotojams.
-Turi galimybe dirbti su beveik visais naujausiais automobilių variklių ir automatinių pavarų dėžių blokais. 
+                                <p>@lang('šiame rinkinyje papildomai nei Vidutiniame rinkinyje diagnostinė įranga, kurios pagalba jūs galėsite daugiau nei 80 automobilių modelių, padaryti log failus, reikiamus prieš individualų galios didinimą bei atlikti reikiamus reset, adaptacijas prieš ir po programavimo darbų. Be diagnostikos įrangos programavimo darbai neįsivaizduojami, tada šis pasiūlymas tinka visiems programuotojams.')
+@lang('Turi galimybe dirbti su beveik visais naujausiais automobilių variklių ir automatinių pavarų dėžių blokais.')
 
   <br>
   <br>
                                 <span class="red">FLEX SLAVE KIT + FLEXible Bench + AUTEL MaxiSys MS908S Pro (su dviejų metų atnaujinimais)+ get free remapas support subscribtion for 1 years + 350crd .</span> <br>
-                                <br><span class="bold">Kaina : 5600 EUR + PVM </span>
+                                <br><span class="bold">@lang('Kaina') : 5600 EUR + PVM </span>
                                
                                 </p>
                             </div>

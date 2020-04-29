@@ -39,7 +39,7 @@ if($prefix!='en' && $prefix!='lt')
 
     Route::get('dyler', function () {
         //App::setLocale();
-        return view('homepage');
+        return view('views.tapk-dyleriu');
     })->name('dyler');
 
     Route::get('kainos', function () {

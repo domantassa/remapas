@@ -9,21 +9,21 @@
 
 
 <div class="container mt-5" style="margin:auto;max-width:1000px">
-    <div class="row"><h4>Kainos</h4></div>
+    <div class="row"><h4>@lang('Kainos')</h4></div>
     <div class="row">
         <div class="col tab tab-begin" id="1"> <div class="rCircle-d "><img class="  my-2"  src="{{asset('images/BakasE25.png')}}" style="height:30px"> </div>
-        <div class="p-1" >Galios didinimo kainos benzininiams varikliams</div>
+        <div class="p-1" >@lang('Galios didinimo kainos benzininiams varikliams')</div>
     
         </div>
         <div class="col tab" id="2"> <div class="rCircle-d "><img class="  my-2"  src="{{asset('images/BakasE85.png')}}"  style="height:30px"></div>
     
-        <div  class="p-1" >Galios didinimo kainos dyzeliniams varikliams</div>
+        <div  class="p-1" >@lang('Galios didinimo kainos dyzeliniams varikliams')</div>
         </div>
         <div class="col tab" id="3"> <div class="rCircle-d "><img class="  my-2"  src="{{asset('images/Forma.png')}}" style="height:30px">    </div>
-         <div  class="p-1" >Kitos darbų <br>kainos</div>
+         <div  class="p-1" >@lang('Kitos darbų') <br>@lang('Kainos')</div>
         </div>
             <div class="col tab" id="4"> <div class="rCircle-d "><img class="  "   src="{{asset('images/Traktorius.png')}}" style="width:33px;margin:0.7rem 0"></div>
-        <div  class="p-1" >Paslaugų kainos sunkiajai ir agro technikai</div>
+        <div  class="p-1" >@lang('Paslaugų kainos sunkiajai ir agro technikai')</div>
         </div>
     </div>
 

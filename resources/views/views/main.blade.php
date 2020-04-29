@@ -4,9 +4,9 @@
 <div class="contain">
     <div class="row showOnPhones">
         <div class="phonecontent">
-            <h1 class="title bold phoneh1">@lang('Sveiki atvykę į') <span class="redT bold">Chip Tunning</span> failų servisą!</h1>
+            <h1 class="title bold phoneh1">@lang('Sveiki atvykę į') <span class="redT bold">Chip Tunning</span> @lang('failų servisą!')</h1>
             <p class="text phonetext">@lang('Siūlome aukščiausios kokybės individualiai kurtas ECU programas daugeliui automobilių.')
-            @lang('Visos programos yra patikrintos naudojant dyno stendą. Dirbame') <span class="redT bold"> 24/7</span>. Registruokitės ir gaukite 20 kreditų <span class="redT bold"> nemokamai </span>!</p>
+            @lang('Visos programos yra patikrintos naudojant dyno stendą. Dirbame') <span class="redT bold"> 24/7</span>. @lang('Registruokitės ir gaukite 20 kreditų') <span class="redT bold"> @lang('nemokamai') </span>!</p>
             <button class="phonebtn">@lang('Mūsų darbai')</button>
             <div class="phonephoto">
                 <img class="phonecar" src="{{asset('images/phonecar.png')}}" style="top: 22px; left: 13px">
@@ -26,8 +26,8 @@
             @lang('Tapk dyleriu')
             </p>
             <div class="cardButtonDiv">
-                <button class="cardButton cardButtonPhone">
-                @lang('PLAČIAU')
+                <button class="cardButton cardButtonPhone upper">
+                @lang('Plačiau')
                 </button>
             </div>
     </div>
@@ -39,8 +39,8 @@
             @lang('Įrankiai')
             </p>
             <div class="cardButtonDiv">
-                <button class="cardButton cardButtonPhone">
-                @lang('PLAČIAU')
+                <button class="cardButton cardButtonPhone upper">
+                @lang('Plačiau')
                 </button>
             </div>
     </div>
@@ -53,8 +53,8 @@
             @lang('Pildyti paraišką')
             </p>
             <div class="cardButtonDiv">
-                <button class="cardButton cardButtonPhone">
-                @lang('PLAČIAU')
+                <button class="cardButton cardButtonPhone upper">
+                @lang('Plačiau')
                 </button>
             </div>
     </div>
@@ -63,12 +63,12 @@
 
     <div class="row hideOnPhones">
         <div class="col-sm-6">
-            <h1 class="title bold">Sveiki atvykę į <span class="redT bold">Chip Tunning</span> failų servisą!</h1>
+            <h1 class="title bold">@lang('Sveiki atvykę į') <span class="redT bold">Chip Tunning</span> @lang('failų servisą!')</h1>
             <div class="col-12 col-sm-9">
             <div class="textContainer">
                 <p class= "text">
-                @lang(' Siūlome aukščiausios kokybės individualiai kurtas ECU programas daugeliui automobilių.')
-                @lang('Visos programos yra patikrintos naudojant dyno stendą. Dirbame') <span class="redT bold"> 24/7</span>. Registruokitės ir gaukite 20 kreditų <span class="redT bold"> nemokamai </span>!
+                @lang('Siūlome aukščiausios kokybės individualiai kurtas ECU programas daugeliui automobilių.')
+                @lang('Visos programos yra patikrintos naudojant dyno stendą. Dirbame') <span class="redT bold"> 24/7</span>. @lang('Registruokitės ir gaukite 20 kreditų') <span class="redT bold"> @lang('nemokamai') </span>!
                 </p>
             </div>
             </div>
@@ -81,8 +81,8 @@
             @lang('Tapk dyleriu')
             </p>
             <div class="cardButtonDiv">
-                <button class="cardButton">
-                @lang('PLAČIAU')
+                <button class="cardButton upper">
+                @lang('Plačiau')
                 </button>
             </div>
             </div>
@@ -94,8 +94,8 @@
             @lang('Įrankiai')
             </p>
             <div class="cardButtonDiv">
-                <button class="cardButton">
-                @lang('PLAČIAU')
+                <button class="cardButton upper">
+                @lang('Plačiau')
                 </button>
             </div>
             </div>
@@ -103,12 +103,12 @@
             <div class="rCircle">
                 <img class="icon" src="{{asset('images/pagalba.png')}}" style="top: 14px; left: 13px">
             </div>
-            <p class= "cardText">
-            @lang('PAGALBOS SISTEMA')
+            <p class= "cardText upp">
+            @lang('Pagalbos sistema')
             </p>
             <div class="cardButtonDiv">
-                <button class="cardButton">
-                @lang('PLAČIAU')
+                <button class="cardButton upper">
+                @lang('Plačiau')
                 </button>
             </div>
             </div>
@@ -144,12 +144,12 @@
             <ul>
         <li class="loginListItem">@lang('Siūlome aukščiausios kokybės individualiai kurtas ECU programas daugeliui automobilių.')</li>
 
-<li class="loginListItem">@lang('Visos programos yra patikrintos naudojant dyno stendą.')</li><li class="loginListItem"> Dirbame 24/7.</li>
+<li class="loginListItem">@lang('Visos programos yra patikrintos naudojant dyno stendą')</li><li class="loginListItem"> @lang('Dirbame 24/7.')</li>
 </ul>
    
 
      
-        <a href="https://files.remapas.lt/" class="btn btn-black" style="text-decoration:none">Prisijungti</a>
+        <a href="https://files.remapas.lt/" class="btn btn-black" style="text-decoration:none">@lang('Prisijungti')</a>
 
     </div>
     </div>
@@ -215,7 +215,7 @@
                 </div>
             </div>
             <p class= "text kodelmesText">
-            @lang('Visiems slave useriams teikiame pagalbą darbe su projektais. Stage 3/4/5 failai ir reikalingų modifikacijų sąrašas,konsultacijos jas atliekant. Visi projektiniai failai teikiami pagal automobilių gyvus parametrus') (data log) ir dyno kreives.
+            @lang('Visiems slave useriams teikiame pagalbą darbe su projektais. Stage 3/4/5 failai ir reikalingų modifikacijų sąrašas,konsultacijos jas atliekant. Visi projektiniai failai teikiami pagal automobilių gyvus parametrus (data log) ir dyno kreives.')
             </p>
             <div class="row">
                 <div class="col-8 hideOnPhone"> 
@@ -223,7 +223,7 @@
                 </div>
                 <div class="col-3">
                     <div class="visdar">
-                    <h1 class=" bold" style="float:right">Vis dar <span class="redT bold">@lang('Neįtikinome')</span>?</h1>
+                    <h1 class=" bold" style="float:right"><@lang('Vis dar') <span class="redT bold">@lang('Neįtikinome')</span>?</h1>
                     <p class= "text visdarText" style="float:right">
                     @lang('Esame atviri pasiūlymams. Susisiekite, pateikite savo sąlygas ir idėjas bendradarbiavimui.')
                     </p>
@@ -254,17 +254,17 @@
             <div class="rCircle">
                 <img class="icon" src="{{asset('images/info.png')}}" style="top: 15px; ">
             </div>
-             <div class="p-2 tabheader" >@lang('APIE MUS')</div>
+             <div class="p-2 tabheader" >@lang('Apie mus')</div>
     
         </div>
         <div class="col tab" id="2"> 
             <div class="rCircle">
                 <img class="icon" src="{{asset('images/dyler.png')}}" style="top: 22px;">
             </div>
-        <div  class="p-2 tabheader" >@lang('TAPK DYLERIU')</div>
+        <div  class="p-2 tabheader" >@lang('Tapk dyleriu')</div>
         </div>
         <div class="col tab" id="3"> <div class="rCircle">                <img class="icon" src="{{asset('images/pagalba.png')}}" style="top: 14px;">    </div>
-         <div  class="p-2 tabheader" >@lang('PAGALBOS SISTEMA')</div>
+         <div  class="p-2 tabheader" >@lang('Pagalbos sistema')</div>
 
     </div>
       
@@ -279,13 +279,13 @@
 
                  
                      <div class="body">
-                     Suteikiame galimybę tapti mūsų partneriu versle, įsigyti profesionalią įrangą darbui, gauti pagalbą, patarimus, konsultacijas bei reikalingas pamokas tam, kad jūsų teikiamos paslaugos taptų aukščiausios kokybės. Šią galimybę suteikiame kiekvienam chiptuneriui, tiek pradedančiajam, tiek pažengusiam profesionalui. Pasinaudokite galimybe savo verslą pakelti į aukščiausią lygmenį, gauti profesionaliausius patarimus, atsakymus į visus klausimus be užuolankų. Padėsime ir konsultuosime visose srityse, pradedant profesionalia diagnostika bei automobilio techninės būklės įvertinimo prieš/po chip tuning, baigiant subtilybėmis nuskaitinėjant bei įrašinėjant failus, reklama, įvaizdžiu bei komunikacija su klientais. Trumpai tariant – jūsų problemos versle taps mūsų problemomis. Būtinos sąlygos – įrangos komplekto įsigijimas iš mūsų rankų bei metinė support narystė mūsų bendruomenėje. Kiekvienas partneris turi galimybę kartu tapti ir partneriu-atstovu, tokiu būdų gauti dar geresnes failų kainas ir daug kitų papildomų privalumų.<br><br>
+                     @lang('Suteikiame galimybę tapti mūsų partneriu versle, įsigyti profesionalią įrangą darbui, gauti pagalbą, patarimus, konsultacijas bei reikalingas pamokas tam, kad jūsų teikiamos paslaugos taptų aukščiausios kokybės. Šią galimybę suteikiame kiekvienam chiptuneriui, tiek pradedančiajam, tiek pažengusiam profesionalui. Pasinaudokite galimybe savo verslą pakelti į aukščiausią lygmenį, gauti profesionaliausius patarimus, atsakymus į visus klausimus be užuolankų. Padėsime ir konsultuosime visose srityse, pradedant profesionalia diagnostika bei automobilio techninės būklės įvertinimo prieš/po chip tuning, baigiant subtilybėmis nuskaitinėjant bei įrašinėjant failus, reklama, įvaizdžiu bei komunikacija su klientais. Trumpai tariant – jūsų problemos versle taps mūsų problemomis. Būtinos sąlygos – įrangos komplekto įsigijimas iš mūsų rankų bei metinė support narystė mūsų bendruomenėje. Kiekvienas partneris turi galimybę kartu tapti ir partneriu-atstovu, tokiu būdų gauti dar geresnes failų kainas ir daug kitų papildomų privalumų.')<br><br>
 
-Noriu tapti partneriu (landing page į anketą, kurią reikia užpildyti norint tapti slave user). Anketoje turi nurodyti vardą pavardę, trumpai apie savo žinias ir patirtį, kokios pagalbos daugiausiai reikės iš mūsų, su kokiais auto žada dirbti ar dirba daugiausiai, kokia turima ir trūkstama įranga, kontaktai kaip susisiekti su juo).<br><br>
+                     @lang('Noriu tapti partneriu (landing page į anketą, kurią reikia užpildyti norint tapti slave user). Anketoje turi nurodyti vardą pavardę, trumpai apie savo žinias ir patirtį, kokios pagalbos daugiausiai reikės iš mūsų, su kokiais auto žada dirbti ar dirba daugiausiai, kokia turima ir trūkstama įranga, kontaktai kaip susisiekti su juo.')<br><br>
 
-Suteikiame galimybę tapti partneriu-atstovu – prekiauti mūsų failais bei įranga, tačiau tai daryti savo vardu. Suteiksime website platformą darbui, kurią galėsite naudoti savo reikmėms arba failų prekybai. Apie visus oficialius partnerius-atstovus skelbsime visuose savo reklamos kanaluose, taip padėsime jums augti. Tokiu būdu būdamas partneriu turėsite unikalią galimybę papildomai užsidirbti, gauti dideles nuolaidas įsigyjant failus savo reikmėms. Atkreipiame dėmesį, kad norint tapti partneriu-atstovu būtina įsigyti slave įrangos paketą. Dėl galimybės tapti partneriu-atstovu kreipkitės tiesiogiai į mus, kiekvienu atveju individualiai aptariamos abiems pusėms palankios sąlygos bei galimybės.<br><br>
+                     @lang('Suteikiame galimybę tapti partneriu-atstovu – prekiauti mūsų failais bei įranga, tačiau tai daryti savo vardu. Suteiksime website platformą darbui, kurią galėsite naudoti savo reikmėms arba failų prekybai. Apie visus oficialius partnerius-atstovus skelbsime visuose savo reklamos kanaluose, taip padėsime jums augti. Tokiu būdu būdamas partneriu turėsite unikalią galimybę papildomai užsidirbti, gauti dideles nuolaidas įsigyjant failus savo reikmėms. Atkreipiame dėmesį, kad norint tapti partneriu-atstovu būtina įsigyti slave įrangos paketą. Dėl galimybės tapti partneriu-atstovu kreipkitės tiesiogiai į mus, kiekvienu atveju individualiai aptariamos abiems pusėms palankios sąlygos bei galimybės.')<br><br>
 
-Tiek partneriu-atstovu, tiek partneriu gali tapti kiekvienas servisas ir pradedantysis. Prisijunkite prie augančios mūsų bendruomenes ir padėkite savo versui augti kartu su mumis, tapkite tikru profesionalu! Mes padėsime jums kasdien tobulėti galios didinimo srityje!
+                     @lang('Tiek partneriu-atstovu, tiek partneriu gali tapti kiekvienas servisas ir pradedantysis. Prisijunkite prie augančios mūsų bendruomenes ir padėkite savo versui augti kartu su mumis, tapkite tikru profesionalu! Mes padėsime jums kasdien tobulėti galios didinimo srityje!')
 
 
                      </div>

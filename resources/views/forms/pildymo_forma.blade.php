@@ -1,7 +1,5 @@
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Launch demo modal
-</button>
+
 
 
 
@@ -11,10 +9,7 @@
 
  
 
-
-<!-- Modal -->
-<div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered " role="document">
+<div class="container">
     <div class="modal-content form">
       <div class="modal-header p-1">
        <h5 class="modal-title a-c " id="exampleModalLongTitle">Dealer Registration Form</h5>
@@ -195,7 +190,6 @@
     </div>
       </div>
     </div>
-  </div>
 </div>
 <script>
 

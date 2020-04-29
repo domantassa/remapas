@@ -189,7 +189,7 @@ body {
     color: white;
     border-radius: 50px;
     text-transform: uppercase;
-    padding: 10px 60px;
+    padding: 10px 0px;
     margin: 25px;
     border: none;
     margin: auto;
@@ -780,4 +780,13 @@ ul {
 }
 .tabheader{
     font-size:18px;
+}
+.upper{
+    text-transform: uppercase;
+}
+.lower{
+    text-transform: capitalize;
+}
+.capit{
+    text-transform: lowercase;
 }
