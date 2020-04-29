@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::redirect('/','/en');
 Route::redirect('','/en');
 Route::redirect('/dyler','/en/dyler');
@@ -20,6 +21,7 @@ Route::redirect('/tools','/en/tools');
 
 Route::group(['prefix' => '{locale}'],function($prefix)
 {
+    Route::post('dyler','FormsController@tapk_dyleriu')->name('form.dyler');
     /*
 if($prefix!='en' && $prefix!='lt')
 {

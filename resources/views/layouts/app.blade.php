@@ -11,8 +11,16 @@
   <script src="js/app.js"></script>
 </head>
 
+
 <body>
         <div class="">
+        <div class="lang">
+        <button class=" btn select">@lang('kalba')</button> 
+
+<a class="option btn" href="{{route(Route::currentRouteName(),__('kalba2'))}}" >{{__('kalba2')}}</a>
+
+
+</div>
           <?php 
 
           ?>
@@ -21,15 +29,10 @@
         </div>
 
 </body>
+
 </html>
 
-<div class="lang">
-  <button class=" btn select">@lang('kalba')</button> 
 
-<a class="option btn" href="{{route(Route::currentRouteName(),__('kalba2'))}}" >{{__('kalba2')}}</button>
-
-
-</div>
 
 <script>
 
@@ -78,5 +81,7 @@ function checkAnimation() {
 $(window).scroll(function(){
     checkAnimation();
 });
+
+
 
   </script>
