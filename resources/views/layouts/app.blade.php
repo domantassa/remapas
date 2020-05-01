@@ -5,7 +5,7 @@
   
 {!! SEO::generate() !!}
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Remapas</title>
   <meta name="description" content="Remapas site">
   <meta name="author" content="Domantas Sabaliauskas">
@@ -25,9 +25,7 @@
 
 
 </div>
-          <?php 
 
-          ?>
             @include('layouts.navbar')
             @yield('content')
         </div>

@@ -128,13 +128,13 @@
                 </div>
             </div>
             <div class="photo-container">
-                <img class=" grow-in PhotoItself" data-src="{{asset('images/ourwork/HONDACIVIC.png')}}"/>
+                <img class=" grow-in PhotoItself" data-src="{{asset('images/ourwork/HONDACIVIC.png')}}" alt="HONDACIVIC.png"/>
                 <div class="overlay">
                     <div class="text">HONDACIVIC</div>
                 </div>
             </div>
             <div class="photo-container">
-                <img class=" grow-in PhotoItself" data-src="{{asset('images/ourwork/VWGOLFR.png')}}"/>
+                <img class=" grow-in PhotoItself" data-src="{{asset('images/ourwork/VWGOLFR.png')}}" alt="VWGOLFR.png"/>
                 <div class="overlay">
                     <div class="text">VWGOLFR</div>
                 </div>
