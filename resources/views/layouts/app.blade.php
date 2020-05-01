@@ -45,19 +45,9 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
 <script>
-
-	
-
-$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-                event.preventDefault();
-                $(this).ekkoLightbox({ wrapping: false });
-            });
-
 const images = document.querySelectorAll('[data-src]');
-
 
 function preloadImage(img) {
     const src = img.getAttribute("data-src");
@@ -88,15 +78,48 @@ images.forEach(image => {
     imgObserver.observe(image);
 })
 
+//ObserverForImages-----------------------------------------------------------
+
+const faders = document.querySelectorAll('.fade-in');
+
+const appearOptions = {
+    threshold:0,
+    rootMargin: "0px 0px -100px 0px"
+}
+
+const appearOnScroll = new IntersectionObserver
+(function(
+    entries,
+    appearOnScroll
+    ) {
+    entries.forEach(entry => {
+        if(!entry.isIntersecting) {
+            return;
+        } else {
+            console.log("fire");
+            entry.target.classList.add("appear");
+            appearOnScroll.unobserve(entry.target);
+        }
+    });
+}, 
+appearOptions);
+
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+});
+
+//ObserverItems-----------------------------------------------------------
+
 $(function() {
 	$c=document.location;
 	$c='nav a[href="'+$c+'"]';
   $($c).addClass('active');
 });
 
+//Navbar-----------------------------------------------------------
+
 
 $(".select").click(function(){
-//alert($('.option').css("display"));
 if($('.option').css("display") == "none")
 {
   $('.option').css("display","block");
@@ -105,39 +128,6 @@ else{
   $('.option').css("display","none");
 }
 
-});
-
-function isElementInViewport(elem) {
-    var $elem = $(elem);
-
-    // Get the scroll position of the page.
-    var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
-    var viewportTop = $(scrollElem).scrollTop();
-    var viewportBottom = viewportTop + $(window).height();
-
-    // Get the position of the element on the page.
-    var elemTop = Math.round( $elem.offset().top );
-    var elemBottom = elemTop + $elem.height();
-
-    return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
-}
-
-// Check if it's time to start the animation.
-function checkAnimation() {
-    var $elem = $('.bar .level');
-
-    // If the animation has already been started
-    if ($elem.hasClass('start')) return;
-
-    if (isElementInViewport($elem)) {
-        // Start the animation
-        $elem.addClass('start');
-    }
-}
-
-// Capture scroll events
-$(window).scroll(function(){
-    checkAnimation();
 });
 
 

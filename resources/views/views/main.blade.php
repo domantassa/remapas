@@ -14,21 +14,21 @@
         <img class="socicon " src="{{asset('images/fb.png')}}" style=" width: 15px; margin-left: 4px;">
     </div></a>
 
-    <div class="row showOnPhones">
+    <div  class="row showOnPhones fade-in">
         <div class="phonecontent">
             <h1 class="title bold phoneh1">@lang('Sveiki atvykę į') <span class="redT bold">Chip Tunning</span> @lang('failų servisą!')</h1>
             <p class="text phonetext">@lang('Siūlome aukščiausios kokybės individualiai kurtas ECU programas daugeliui automobilių.')
             @lang('Visos programos yra patikrintos naudojant dyno stendą. Dirbame') <span class="redT bold"> 24/7</span>. @lang('Registruokitės ir gaukite 20 kreditų') <span class="redT bold"> @lang('nemokamai') </span>!</p>
             <button class="phonebtn">@lang('Mūsų darbai')</button>
             <div class="phonephoto">
-                <img class="phonecar " src="{{asset('images/phonecar.png')}}" style="top: 22px; left: 13px">
+                <img class="phonecar grow-in" data-src="{{asset('images/phonecar.png')}}" style="top: 22px; left: 13px">
             </div>
         </div>
         
 
     </div>
 
-    <div class="showOnPhones">
+    <div class="showOnPhones ">
         
     <div class="gSection phonecard">
         <div class="rCircle">
@@ -57,7 +57,7 @@
             </div>
     </div>
     
-    <div class="gSection phonecard">
+    <div class="gSection phonecard ">
         <div class="rCircle">
         <img class="icon " src="{{asset('images/pagalba.png')}}" style="top: 14px; left: 13px">
             </div>
@@ -73,7 +73,7 @@
 
     </div>
 
-    <div class="row hideOnPhones">
+    <div  class="row hideOnPhones fade-in ">
         <div class="col-sm-6">
             <h1 class="title bold">@lang('Sveiki atvykę į') <span class="redT bold">Chip Tunning</span> @lang('failų servisą!')</h1>
             <div class="col-12 col-sm-9">
@@ -106,7 +106,7 @@
             @lang('Įrankiai')
             </p>
             <div class="cardButtonDiv">
-                <button class="cardButton upper">
+                <button class="cardButton upper ">
                 @lang('Plačiau')
                 </button>
             </div>
@@ -119,7 +119,7 @@
             @lang('Pagalbos sistema')
             </p>
             <div class="cardButtonDiv">
-                <button class="cardButton upper">
+                <button class="cardButton upper ">
                 @lang('Plačiau')
                 </button>
             </div>
@@ -147,7 +147,7 @@
   </div>
  
   
-    <div class="row mtem">
+    <div  class="row mtem fade-in">
     <div class="col-md-6 rSection">
         <div class="rcontent m-5">
 
@@ -184,51 +184,51 @@
     </div>
     
   </div>
-  <div class="row">
+  <div  class="row">
         <div class="flex center mt-5">
             <h1 class="bold">
             @lang('Kodėl mes?')
             </h1>
         </div>
         <div class="kodelmes">
-            <div class="circlePlace">
+            <div class="circlePlace fade-in">
                 <div class="rCircle kodelmesCircle">
                 <p class="kodesmesNumber">1</p>
                 </div>
             </div>
-            <p class= "text kodelmesText">
+            <p class= "text kodelmesText fade-in">
             @lang('Mūsų pasiūloje rasite tik 100% Dyno ištestuotus, aukščiausios kokybės failus, kuriems suteikiame garantiją.Pagal individualius susitarimus failus teikiame beveik visą parą.')
             </p>
-            <div class="circlePlace">
+            <div class="circlePlace fade-in">
                 <div class="rCircle kodelmesCircle">
                 <p class="kodesmesNumber">2</p>
                 </div>
             </div>
-            <p class= "text kodelmesText">
+            <p class= "text kodelmesText fade-in">
             @lang('Esant reikalui atliksime būtent jūsų atveju reikalingas failo korekcijas.')
             </p>
-            <div class="circlePlace">
+            <div class="circlePlace fade-in">
                 <div class="rCircle kodelmesCircle">
                     <p class="kodesmesNumber">3</p>
                 </div>
             </div>
-            <p class= "text kodelmesText">
+            <p class= "text kodelmesText fade-in">
             @lang('Bene vieninteliai pasaulyje siūlome tokią stiprią, visapusišką, lanksčiomis darbo valandomis veikiančią support sistemą, kuri padės spręsti visas įmanomas problemas - failų, įrangos naudojimo, mechaninių gedimų, mechaninio automobilių tobulinimo ir kt.')
             </p>
-            <div class="circlePlace">
+            <div class="circlePlace fade-in">
                 <div class="rCircle kodelmesCircle">
                 <p class="kodesmesNumber">4</p>
                 </div>
             </div>
-            <p class= "text kodelmesText">
+            <p class= "text kodelmesText fade-in">
             @lang('Suteikiame laisvę rinktis kaip glaudžiai norite bendradarbiauti su mumis.Savarankiškai dirbantiems su master įranga siūlome patogiomis valandomis veikiantį failų tiekimą ir live help /tickets sistemos pagalbą. Siekiantiems užtikrinto rezultato, nuolatinio tobulėjimo ir tiems, kuriems reikalinga patikima pagalba iš šalies siūlome stiprią support sistemą, įrangos įsigijimą ir daugybę kitų privalumų.')
             </p>
-            <div class="circlePlace">
+            <div class="circlePlace fade-in">
                 <div class="rCircle kodelmesCircle">
                 <p class="kodesmesNumber">5</p>
                 </div>
             </div>
-            <p class= "text kodelmesText">
+            <p class= "text kodelmesText fade-in">
             @lang('Visiems slave useriams teikiame pagalbą darbe su projektais. Stage 3/4/5 failai ir reikalingų modifikacijų sąrašas,konsultacijos jas atliekant. Visi projektiniai failai teikiami pagal automobilių gyvus parametrus (data log) ir dyno kreives.')
             </p>
             <div class="row">
@@ -259,7 +259,7 @@
 
 
 </div>
-<div class="mob-cont">
+<div  class="mob-cont fade-in">
 <div class="container mt-5 " style="margin:auto;max-width:1000px">
 <div class="">
     <div class="row">
@@ -285,7 +285,7 @@
       
     </div>
 
-    <div class="row" style="">
+    <div  class="row">
         
             <div class="tab-content failu-servisas" >
             <div class="overlay">

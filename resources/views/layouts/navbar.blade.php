@@ -15,7 +15,7 @@
         <a class="nav-link" href="{{route('home',App::getLocale())}}">@lang('Namai')</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{route('home',App::getLocale())}}">@lang('Failų servisas')</a>
+        <a class="nav-link" href="https://files.remapas.lt/">@lang('Failų servisas')</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{route('dyler',App::getLocale() )}}">@lang('Tapti dyleriu')</a>
@@ -24,7 +24,7 @@
         <a class="nav-link" href="{{route('tools',App::getLocale())}}">@lang('Įrankiai')</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{route('dyler',App::getLocale())}}">@lang('Remapas support')</a>
+        <a class="nav-link" href="https://files.remapas.lt/">@lang('Remapas support')</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{route('kainos',App::getLocale())}}">@lang('Kainos')</a>
