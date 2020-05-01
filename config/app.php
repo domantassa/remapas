@@ -135,7 +135,7 @@ return [
     */
 
     'providers' => [
-
+        
         /*
          * Laravel Framework Service Providers...
          */
@@ -175,6 +175,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*addons  */
+        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
     ],
 
     /*

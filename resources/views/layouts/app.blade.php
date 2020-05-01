@@ -2,6 +2,8 @@
 
 <html lang="en">
 <head>
+  
+{!! SEO::generate() !!}
   <meta charset="utf-8">
 
   <title>Remapas</title>
@@ -9,6 +11,7 @@
   <meta name="author" content="Domantas Sabaliauskas">
   <link rel="stylesheet" href="{{asset('css/app.css')}}">
   <script src="js/app.js"></script>
+  @yield('meta')
 </head>
 
 
