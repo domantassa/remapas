@@ -21,7 +21,7 @@
             @lang('Visos programos yra patikrintos naudojant dyno stendą. Dirbame') <span class="redT bold"> 24/7</span>. @lang('Registruokitės ir gaukite 20 kreditų') <span class="redT bold"> @lang('nemokamai') </span>!</p>
             <button class="phonebtn">@lang('Mūsų darbai')</button>
             <div class="phonephoto">
-                <img class="phonecar " data-src="{{asset('images/phonecar.png')}}" style="top: 22px; left: 13px">
+                <img class="phonecar " src="{{asset('images/phonecar.png')}}" style="top: 22px; left: 13px">
             </div>
         </div>
         

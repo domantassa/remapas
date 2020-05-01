@@ -11160,18 +11160,21 @@ ul .registerListItem::before {
 .KodelmesCar {
   margin: auto;
   margin-top: 3rem;
+  display: none;
   width: 0px;
 }
 
 @media (min-width: 900px) {
   .KodelmesCar {
     width: 450px;
+    display: block;
   }
 }
 
 @media (min-width: 1200px) {
   .KodelmesCar {
     width: 800px;
+    display: block;
   }
 }
 
