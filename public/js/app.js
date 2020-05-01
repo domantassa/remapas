@@ -37328,53 +37328,6 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-var matches = document.querySelectorAll("[data-src]");
-console.log(matches);
-var images = document.querySelectorAll('[data-src]');
-console.log(faders);
-
-function preloadImage(img) {
-  var src = img.getAttribute("data-src");
-
-  if (!src) {
-    return;
-  }
-
-  img.src = src;
-}
-
-var imgOptions = {
-  threshold: 0,
-  rootMargin: "0px 0px 300px 0px"
-};
-var imgObserver = new IntersectionObserver(function (entries, imgObserver) {
-  entries.forEach(function (entry) {
-    if (!entry.isIntersecting) {
-      return;
-    } else {
-      preloadImage(entry.target);
-      imgObserver.unobserve(entry.target);
-    }
-  });
-}, imgOptions);
-images.forEach(function (image) {
-  imgObserver.observe(image);
-});
-var appearOptions = {};
-var appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
-  entries.forEach(function (entry) {
-    if (!entry.isIntersecting) {
-      return;
-    } else {
-      entry.target.classList.add('fade-in-appear');
-      apearOnScroll.unobserve(entry.target);
-    }
-  });
-}, appearOptions);
-faders.forEach(function (fader) {
-  appearOnScroll.observe(fader);
-});
-
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":

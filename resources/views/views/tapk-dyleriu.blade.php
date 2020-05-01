@@ -92,12 +92,6 @@
     transform: scale(1.4) rotate(5deg);
 }
 
-.modal-body {
-    position: relative;
-    flex: 1 1 auto;
-    padding: 0rem;
-    border: 0;
-}
 
 
 }
@@ -109,21 +103,18 @@
 
     <div class="row">
         <div class="itemContainer">
-        <a href="{{asset('images/ourwork/AUDIA7.png')}}" data-toggle="lightbox" data-gallery="example-gallery" >
             <div class="photo-container">
                 <img id="myImg" class=" PhotoItself" src="{{asset('images/ourwork/AUDIA7.png')}}"/>
                 <div class="overlay">
                     <div class="text">AUDIA7</div>
                 </div>
-            </div></a>
-            <a href="{{asset('images/ourwork/AUDIRS7.png')}}" data-toggle="lightbox" data-gallery="example-gallery" >
-            <div class="photo-container">
+            </div>
+                <div class="photo-container">
                 <img class=" PhotoItself" src="{{asset('images/ourwork/AUDIRS7.png')}}"/>
                 <div class="overlay">
                     <div class="text">AUDIRS7</div>
                 </div>
             </div>
-            </a>
             <div class="photo-container">
                 <img class=" PhotoItself" src="{{asset('images/ourwork/AUDIS6.png')}}"/>
                 <div class="overlay">
