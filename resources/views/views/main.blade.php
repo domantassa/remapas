@@ -5,13 +5,13 @@
 
 
     <a href="https://youtube.com"><div class="soc yt">
-        <img class="socicon" src="{{asset('images/yt.png')}}" style=" width: 20px">
+        <img class="socicon" src="{{asset('images/yt.png')}}" alt="yt.png" style=" width: 20px">
     </div></a>
     <a href="https://youtube.com"><div class="soc insta">
-        <img class="socicon" src="{{asset('images/ig.png')}}" style="width: 25px">
+        <img class="socicon" src="{{asset('images/ig.png')}}" alt="ig.png" style="width: 25px">
     </div></a>
     <a href="https://facebook.com"><div class="soc fb">
-        <img class="socicon " src="{{asset('images/fb.png')}}" style=" width: 15px; margin-left: 4px;">
+        <img class="socicon " src="{{asset('images/fb.png')}}" alt="fb.png" style=" width: 15px; margin-left: 4px;">
     </div></a>
 
     <div class="row showOnPhones">
@@ -21,7 +21,7 @@
             @lang('Visos programos yra patikrintos naudojant dyno stendą. Dirbame') <span class="redT bold"> 24/7</span>. @lang('Registruokitės ir gaukite 20 kreditų') <span class="redT bold"> @lang('nemokamai') </span>!</p>
             <button class="phonebtn">@lang('Mūsų darbai')</button>
             <div class="phonephoto">
-                <img class="phonecar " data-src="{{asset('images/phonecar.png')}}" style="top: 22px; left: 13px">
+                <img class="phonecar " data-src="{{asset('images/phonecar.png')}}" alt="phonecar.png" style="top: 22px; left: 13px">
             </div>
         </div>
         
@@ -32,7 +32,7 @@
         
     <div class="gSection phonecard">
         <div class="rCircle">
-                <img class="icon" src="{{asset('images/dyler.png')}}" style="top: 22px; left: 13px">
+                <img class="icon" src="{{asset('images/dyler.png')}}" alt="dyler.png" style="top: 22px; left: 13px">
             </div>
             <p class= "cardText">
             @lang('Tapk dyleriu')
@@ -45,7 +45,7 @@
     </div>
     <div class="gSection phonecard">
         <div class="rCircle">
-                <img class="icon " src="{{asset('images/irankis.png')}}" style="top: 14px; left: 13px">
+                <img class="icon " src="{{asset('images/irankis.png')}}" alt="irankis.png" style="top: 14px; left: 13px">
             </div>
             <p class= "cardText">
             @lang('Įrankiai')
@@ -59,7 +59,7 @@
     
     <div class="gSection phonecard">
         <div class="rCircle">
-        <img class="icon " src="{{asset('images/pagalba.png')}}" style="top: 14px; left: 13px">
+        <img class="icon " src="{{asset('images/pagalba.png')}}" alt="pagalba.png" style="top: 14px; left: 13px">
             </div>
             <p class= "cardText">
             @lang('Pildyti paraišką')
@@ -87,7 +87,7 @@
             <div class="row  rowCol">
             <div class="col-2 card-round">
             <div class="rCircle">
-                <img class="icon" src="{{asset('images/dyler.png')}}" style="top: 22px; left: 13px">
+                <img class="icon" src="{{asset('images/dyler.png')}}" alt="dyler.png" style="top: 22px; left: 13px">
             </div>
             <p class= "cardText">
             @lang('Tapk dyleriu')
@@ -100,7 +100,7 @@
             </div>
             <div class="col-2 card-round">
             <div class="rCircle">
-                <img class="icon " src="{{asset('images/irankis.png')}}" style="top: 14px; left: 13px">
+                <img class="icon " src="{{asset('images/irankis.png')}}" alt="irankis.png" style="top: 14px; left: 13px">
             </div>
             <p class= "cardText">
             @lang('Įrankiai')
@@ -113,7 +113,7 @@
             </div>
             <div class="col-2 card-round">
             <div class="rCircle">
-                <img class="icon " src="{{asset('images/pagalba.png')}}" style="top: 14px; left: 13px">
+                <img class="icon " src="{{asset('images/pagalba.png')}}" alt="pagalba.png" style="top: 14px; left: 13px">
             </div>
             <p class= "cardText upp">
             @lang('Pagalbos sistema')
@@ -140,7 +140,7 @@
         </div>
         <div class="col-sm-6" style="z-index: -1">
             <div class="rCircle bigRCircle">
-                <img class="grow-in grow-in-appear car" src="{{asset('images/car.png')}}">
+                <img class="grow-in grow-in-appear car" src="{{asset('images/car.png')}}" alt="car.png">
             </div>
         </div>
     </div>
@@ -233,7 +233,7 @@
             </p>
             <div class="row">
                 <div class="col-8 hideOnPhone"> 
-                    <img class="grow-in KodelmesCar" data-src="{{asset('images/kodelmesCar.png')}}">
+                    <img class="grow-in KodelmesCar" data-src="{{asset('images/kodelmesCar.png')}}" alt="kodelmesCar.png">
                 </div>
                 <div class="col-3">
                     <div class="visdar">
@@ -246,7 +246,7 @@
                     
                 </div>
                 <div class="showOnPhones">
-                    <img class="grow-in kodelmesCarSmall" data-src="{{asset('images/kodelmesCarSmall.png')}}">
+                    <img class="grow-in kodelmesCarSmall" data-src="{{asset('images/kodelmesCarSmall.png')}}" alt="kodelmesCarSmall.png">
                 </div>
             
 
@@ -266,18 +266,18 @@
 
         <div class="col tab tab-begin" id="1"> 
             <div class="rCircle">
-                <img class="icon" src="{{asset('images/info.png')}}" style="top: 15px; ">
+                <img class="icon" src="{{asset('images/info.png')}}" alt="info.png" style="top: 15px; ">
             </div>
              <div class="p-2 tabheader" >@lang('Apie mus')</div>
     
         </div>
         <div class="col tab" id="2"> 
             <div class="rCircle">
-                <img class="icon" src="{{asset('images/dyler.png')}}" style="top: 22px;">
+                <img class="icon" src="{{asset('images/dyler.png')}}" alt="dyler.png"  style="top: 22px;">
             </div>
         <div  class="p-2 tabheader" >@lang('Tapk dyleriu')</div>
         </div>
-        <div class="col tab" id="3"> <div class="rCircle">                <img class="icon" src="{{asset('images/pagalba.png')}}" style="top: 14px;">    </div>
+        <div class="col tab" id="3"> <div class="rCircle">                <img  class="icon" src="{{asset('images/pagalba.png')}}" alt="pagalba.png"  style="top: 14px;">    </div>
          <div  class="p-2 tabheader" >@lang('Pagalbos sistema')</div>
 
     </div>

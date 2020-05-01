@@ -41,7 +41,7 @@ return [
             'url'         => false, // Set null for using Url::current(), set false to total remove
             'type'        => false,
             'site_name'   => false,
-            'images'      => [],
+            'images'      => ['https://remapas.eu/images/logotipas.png'],
         ],
     ],
     'twitter' => [
@@ -62,7 +62,7 @@ return [
             'description' => 'Profesionalus automobilių remapas dyzeliams ir benzinams Kaune ir Marijampolėje. 4wd galios matavimo stendas, garantija atliktiems darbams, gera kaina. Susisiekite dabar! Greitai atliekami darbai. Tarptautinis pripažinimas.', // set false to total remove
             'url'         => false, // Set null for using Url::current(), set false to total remove
             'type'        => 'WebPage',
-            'images'      => [],
+            'images'      => ['https://remapas.eu/images/logotipas.png'],
         ],
     ],
 ];

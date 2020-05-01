@@ -14,7 +14,7 @@
     <div class="col carr">
         <div class="">
         <div class="rCircle bigRCircle">
-            <img class="car" src="{{asset('images/car.png')}}">
+            <img class="car" src="{{asset('images/car.png')}}" alt="car.png">
         </div>
         </div>
 </div>

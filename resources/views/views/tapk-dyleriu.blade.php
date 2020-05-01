@@ -104,37 +104,37 @@
     <div class="row">
         <div class="itemContainer">
             <div class="photo-container">
-                <img id="myImg" class=" PhotoItself" src="{{asset('images/ourwork/AUDIA7.png')}}"/>
+                <img id="myImg" class=" PhotoItself" src="{{asset('images/ourwork/AUDIA7.png')}}" alt="AUDIA7.png"/>
                 <div class="overlay">
                     <div class="text">AUDIA7</div>
                 </div>
             </div>
                 <div class="photo-container">
-                <img class=" PhotoItself" src="{{asset('images/ourwork/AUDIRS7.png')}}"/>
+                <img class=" PhotoItself" src="{{asset('images/ourwork/AUDIRS7.png')}}" alt="AUDIRS7.png"/>
                 <div class="overlay">
                     <div class="text">AUDIRS7</div>
                 </div>
             </div>
             <div class="photo-container">
-                <img class=" PhotoItself" src="{{asset('images/ourwork/AUDIS6.png')}}"/>
+                <img class=" PhotoItself" src="{{asset('images/ourwork/AUDIS6.png')}}" alt="AUDIS6.png"/>
                 <div class="overlay">
                     <div class="text">AUDIS6</div>
                 </div>
             </div>
             <div class="photo-container">
-                <img class=" grow-in PhotoItself" data-src="{{asset('images/ourwork/BMW428i.png')}}"/>
+                <img class=" grow-in PhotoItself" data-src="{{asset('images/ourwork/BMW428i.png')}}" alt="BMW428i.png"/>
                 <div class="overlay">
                     <div class="text">BMW428i</div>
                 </div>
             </div>
             <div class="photo-container">
-                <img class=" grow-in PhotoItself" data-src="{{asset('images/ourwork/HONDACIVIC.png')}}"/>
+                <img class=" grow-in PhotoItself" data-src="{{asset('images/ourwork/HONDACIVIC.png')}}" alt="HONDACIVIC.png"/>
                 <div class="overlay">
                     <div class="text">HONDACIVIC</div>
                 </div>
             </div>
             <div class="photo-container">
-                <img class=" grow-in PhotoItself" data-src="{{asset('images/ourwork/VWGOLFR.png')}}"/>
+                <img class=" grow-in PhotoItself" data-src="{{asset('images/ourwork/VWGOLFR.png')}}" alt="VWGOLFR.png"/>
                 <div class="overlay">
                     <div class="text">VWGOLFR</div>
                 </div>

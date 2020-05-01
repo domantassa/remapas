@@ -1,7 +1,7 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-dark">
-  <a class="navbar-brand" href="{{URL::to('/')}}"><img class="logo" src="{{asset('images/logotipas.png')}}"></a>
+  <a class="navbar-brand" href="{{URL::to('/')}}"><img class="logo" src="{{asset('images/logotipas.png')}}" alt="logo.png" ></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

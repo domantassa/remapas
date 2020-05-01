@@ -10,11 +10,11 @@
 <div class="container mt-5" style="margin:auto;max-width:1000px">
     <div class="row"><h4>Tools</h4></div>
     <div class="row">
-        <div class="col-6 tab tab-begin" id="1"><div  class="d-flex align-self-center" style="height:100%"><img class="p-2  my-2"  src="{{asset('images/magic.png')}}"  style="width:100%;object-fit: contain;"></div></div>
+        <div class="col-6 tab tab-begin" id="1"><div  class="d-flex align-self-center" style="height:100%"><img class="p-2  my-2"  src="{{asset('images/magic.png')}}" alt="magic.png"  style="width:100%;object-fit: contain;"></div></div>
         
     
       
-        <div class="col-6 tab" id="2"><div  class="d-flex align-self-center" style="height:100%"><img class="p-2  my-2"  src="{{asset('images/alientech.png')}}"  style="width:100%;object-fit: contain;"></div></div>
+        <div class="col-6 tab" id="2"><div  class="d-flex align-self-center" style="height:100%"><img class="p-2  my-2"  src="{{asset('images/alientech.png')}}" alt="alientech.png"  style="width:100%;object-fit: contain;"></div></div>
      
         
       
@@ -77,7 +77,7 @@
                             </div>
                             
                             <div class="col-sm-4">
-                                <img style="width:100%" src="{{asset('images/1.png')}}">
+                                <img style="width:100%" src="{{asset('images/1.png')}}" alt="1.png">
 
                             </div>
                         </div>
@@ -101,8 +101,8 @@
                                 </p>
                             </div>
                             <div class="col-sm-4">
-                                <img style="width:100%" src="{{asset('images/3.png')}}">
-                                <img style="width:100%" src="{{asset('images/4.png')}}">
+                                <img style="width:100%" src="{{asset('images/3.png')}}" alt="3.png">
+                                <img style="width:100%" src="{{asset('images/4.png')}}" alt="4.png">
                             </div>
                         </div>
                      </div>
@@ -125,8 +125,8 @@
                                 </p>
                             </div>
                             <div class="col-sm-4">
-                                <img style="width:100%" src="{{asset('images/4.png')}}">
-                                <img style="width:100%" src="{{asset('images/5.png')}}">
+                                <img style="width:100%" src="{{asset('images/4.png')}}" alt="4.png">
+                                <img style="width:100%" src="{{asset('images/5.png')}}" alt="5.png">
                             </div>
                         </div>
                      </div>

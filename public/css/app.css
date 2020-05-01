@@ -11227,7 +11227,10 @@ ul .registerListItem::before {
 }
 
 .phonecontent {
-  margin: 2em;
+  /* margin: 2em;*/
+  padding: 2em;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .phonecard {
