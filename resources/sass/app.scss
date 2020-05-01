@@ -193,7 +193,7 @@ body {
     margin: auto;
     margin-top: 60px;
     border: none;
-    background-color: black;
+    background-color: black !important;
     color: $red;
     border-radius: 50px;
     padding: 5px 30px;
@@ -450,6 +450,15 @@ ul {
     text-align:center;
     margin:auto;
 }
+.form-text:disabled, .form-text[readonly],.form-select[readonly] {
+    color:#555;
+    background-color: $grey-light;
+    opacity: 1;
+ 
+}
+
+
+
 .form{
    
     background:$transparent;
@@ -551,7 +560,7 @@ ul {
     }
 
 }
-.btn-black{
+.btn-black {
     border-radius: 8px;
     
     margin: 5px;
@@ -591,8 +600,12 @@ ul {
 .form-control:-moz-placeholder { color: white;  font-family: inherit;}  /* Mozilla Firefox 4 to 18 */
 .form-control::-moz-placeholder { color: white; font-family: inherit; }  /* Mozilla Firefox 19+ */
 .form-control:-ms-input-placeholder { color: white;  font-family: inherit;}  /* Internet Explorer 10-11 */
-.form-control::-ms-input-placeholder { color: white;  font-family: inherit;}
-
+.form-control[readonly]::-ms-input-placeholder { color: #555;  font-family: inherit;}
+.form-control[readonly]::-webkit-input-placeholder { color: #555; font-family: inherit; }  /* WebKit, Blink, Edge */
+.form-control[readonly]:-moz-placeholder { color: #555;  font-family: inherit;}  /* Mozilla Firefox 4 to 18 */
+.form-control[readonly]::-moz-placeholder { color: #555; font-family: inherit; }  /* Mozilla Firefox 19+ */
+.form-control[readonly]:-ms-input-placeholder { color: #555;  font-family: inherit;}  /* Internet Explorer 10-11 */
+.form-control[readonly]::-ms-input-placeholder { color: #555;  font-family: inherit;}
 
 .tab{
 
@@ -894,6 +907,54 @@ ul {
 .capit{
     text-transform: lowercase;
 }
+.check-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .check-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .check-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  .check-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .check-container input:checked ~ .checkmark:after {
+    display: block;
+  }
 @keyframes animation{
     from{opacity: 0;}
     to{opacity: 1;} 

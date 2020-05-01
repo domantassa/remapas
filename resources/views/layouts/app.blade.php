@@ -2,6 +2,8 @@
 
 <html lang="en">
 <head>
+  
+{!! SEO::generate() !!}
   <meta charset="utf-8">
 
   <title>Remapas</title>
@@ -9,10 +11,19 @@
   <meta name="author" content="Domantas Sabaliauskas">
   <link rel="stylesheet" href="{{asset('css/app.css')}}">
   <script src="js/app.js"></script>
+  @yield('meta')
 </head>
+
 
 <body>
         <div class="">
+        <div class="lang">
+        <button class=" btn select">@lang('kalba')</button> 
+
+<a class="option btn" href="{{route(Route::currentRouteName(),__('kalba2'))}}" >{{__('kalba2')}}</a>
+
+
+</div>
           <?php 
 
           ?>
@@ -21,6 +32,7 @@
         </div>
 
 </body>
+
 </html>
 
 <div class="lang">
@@ -126,5 +138,7 @@ function checkAnimation() {
 $(window).scroll(function(){
     checkAnimation();
 });
+
+
 
   </script>
