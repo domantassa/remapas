@@ -2,6 +2,18 @@
 @section('content')
 
 <div class="contain">
+
+
+    <a href="https://youtube.com"><div class="soc yt">
+        <img class="socicon" src="{{asset('images/yt.png')}}" style=" width: 20px">
+    </div></a>
+    <a href="https://youtube.com"><div class="soc insta">
+        <img class="socicon" src="{{asset('images/ig.png')}}" style="width: 25px">
+    </div></a>
+    <a href="https://facebook.com"><div class="soc fb">
+        <img class="socicon " src="{{asset('images/fb.png')}}" style=" width: 15px; margin-left: 4px;">
+    </div></a>
+
     <div class="row showOnPhones">
         <div class="phonecontent">
             <h1 class="title bold phoneh1">@lang('Sveiki atvykę į') <span class="redT bold">Chip Tunning</span> @lang('failų servisą!')</h1>
@@ -9,7 +21,7 @@
             @lang('Visos programos yra patikrintos naudojant dyno stendą. Dirbame') <span class="redT bold"> 24/7</span>. @lang('Registruokitės ir gaukite 20 kreditų') <span class="redT bold"> @lang('nemokamai') </span>!</p>
             <button class="phonebtn">@lang('Mūsų darbai')</button>
             <div class="phonephoto">
-                <img class="phonecar" src="{{asset('images/phonecar.png')}}" style="top: 22px; left: 13px">
+                <img class="phonecar " data-src="{{asset('images/phonecar.png')}}" style="top: 22px; left: 13px">
             </div>
         </div>
         
@@ -33,7 +45,7 @@
     </div>
     <div class="gSection phonecard">
         <div class="rCircle">
-                <img class="icon" src="{{asset('images/irankis.png')}}" style="top: 14px; left: 13px">
+                <img class="icon " src="{{asset('images/irankis.png')}}" style="top: 14px; left: 13px">
             </div>
             <p class= "cardText">
             @lang('Įrankiai')
@@ -47,7 +59,7 @@
     
     <div class="gSection phonecard">
         <div class="rCircle">
-        <img class="icon" src="{{asset('images/pagalba.png')}}" style="top: 14px; left: 13px">
+        <img class="icon " src="{{asset('images/pagalba.png')}}" style="top: 14px; left: 13px">
             </div>
             <p class= "cardText">
             @lang('Pildyti paraišką')
@@ -72,7 +84,7 @@
                 </p>
             </div>
             </div>
-            <div class="row rowCol">
+            <div class="row  rowCol">
             <div class="col-2 card-round">
             <div class="rCircle">
                 <img class="icon" src="{{asset('images/dyler.png')}}" style="top: 22px; left: 13px">
@@ -88,7 +100,7 @@
             </div>
             <div class="col-2 card-round">
             <div class="rCircle">
-                <img class="icon" src="{{asset('images/irankis.png')}}" style="top: 14px; left: 13px">
+                <img class="icon " src="{{asset('images/irankis.png')}}" style="top: 14px; left: 13px">
             </div>
             <p class= "cardText">
             @lang('Įrankiai')
@@ -101,7 +113,7 @@
             </div>
             <div class="col-2 card-round">
             <div class="rCircle">
-                <img class="icon" src="{{asset('images/pagalba.png')}}" style="top: 14px; left: 13px">
+                <img class="icon " src="{{asset('images/pagalba.png')}}" style="top: 14px; left: 13px">
             </div>
             <p class= "cardText upp">
             @lang('Pagalbos sistema')
@@ -128,14 +140,14 @@
         </div>
         <div class="col-sm-6" style="z-index: -1">
             <div class="rCircle bigRCircle">
-                <img class="car" src="{{asset('images/car.png')}}">
+                <img class="grow-in grow-in-appear car" src="{{asset('images/car.png')}}">
             </div>
         </div>
     </div>
   </div>
  
   
-    <div class="row">
+    <div class="row mtem">
     <div class="col-md-6 rSection">
         <div class="rcontent m-5">
 
@@ -143,9 +155,11 @@
             <h1 class="bold"><span class="redT bold gSectionRText" style="color:white !important">@lang('Prisijungite prie savo failų sistemos')</span></h1>
             <ul>
         <li class="loginListItem">@lang('Siūlome aukščiausios kokybės individualiai kurtas ECU programas daugeliui automobilių.')</li>
-
-<li class="loginListItem">@lang('Visos programos yra patikrintos naudojant dyno stendą')</li><li class="loginListItem"> @lang('Dirbame 24/7.')</li>
-</ul>
+        <li class="loginListItem">@lang('Visos programos yra patikrintos naudojant dyno stendą')</li>
+        <li class="loginListItem">@lang('Naudokitės mūsų pagalbos sistema')</li>
+        <li class="loginListItem">@lang('Išmėginkite mūsų naujus teikiamus įrankius')</li>
+        <li class="loginListItem">@lang('Dirbame 24/7.')</li>
+        </ul>
    
 
      
@@ -219,7 +233,7 @@
             </p>
             <div class="row">
                 <div class="col-8 hideOnPhone"> 
-                    <img class="KodelmesCar" src="{{asset('images/kodelmesCar.png')}}">
+                    <img class="grow-in KodelmesCar" data-src="{{asset('images/kodelmesCar.png')}}">
                 </div>
                 <div class="col-3">
                     <div class="visdar">
@@ -232,7 +246,7 @@
                     
                 </div>
                 <div class="showOnPhones">
-                    <img class="kodelmesCarSmall" src="{{asset('images/kodelmesCarSmall.png')}}">
+                    <img class="grow-in kodelmesCarSmall" data-src="{{asset('images/kodelmesCarSmall.png')}}">
                 </div>
             
 
@@ -322,22 +336,12 @@
 <script>
 
  $( ".tab" ).click(function() {
-
-        
     $("#content-"+$(".tab-begin").attr('id')).removeClass("content-begin");
     $(".tab-begin").removeClass("tab-begin");
-   
-
         $("#content-"+$( ".tab-active" ).attr('id')).removeClass("content-active");
         $(".tab-active").removeClass("tab-active");
-    
-        
-
-     
-    
      $( this).addClass( "tab-active" );
   $( this).addClass( "tab-active" );
-    // alert(this);
     $("#content-"+$( ".tab-active" ).attr('id')).addClass( "content-active" );
     
 

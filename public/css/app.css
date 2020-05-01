@@ -10924,6 +10924,7 @@ body {
 
 .nav-link {
   color: #ffffff;
+  text-align: center;
 }
 
 .redT {
@@ -10943,9 +10944,24 @@ body {
 }
 
 .nav-item {
+  box-sizing: border-box;
+  transition: all 0.5s ease;
   margin-left: 15px;
   font-size: 16px;
   color: #ffffff;
+  border-bottom: 3px solid rgba(255, 255, 255, 0);
+}
+
+.nav-link:hover {
+  transition: 0.1s;
+  border-bottom: 3px solid #dd2837;
+  transform: scale(1.1);
+}
+
+@media (max-width: 599px) {
+  .nav-link:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+  }
 }
 
 .visdar {
@@ -11218,7 +11234,7 @@ ul .registerListItem::before {
 }
 
 .kodelmesCarSmall {
-  width: 150%;
+  width: 140%;
   top: -184px;
   left: -445px;
   position: relative;
@@ -11460,6 +11476,15 @@ ul .registerListItem::before {
   background: #dd2837;
 }
 
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
 .tab-begin {
   background: #dd2837;
 }
@@ -11472,6 +11497,17 @@ ul .registerListItem::before {
 .content-active {
   min-height: 300px;
   display: block !important;
+}
+
+.active {
+  border-bottom: 3px solid #dd2837;
+  transform: scale(1.1);
+}
+
+@media (max-width: 599px) {
+  .active {
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+  }
 }
 
 .content {
@@ -11581,10 +11617,12 @@ ul .registerListItem::before {
 .lang {
   position: absolute;
   right: 0;
-  top: 200px;
+  top: 140px;
+  max-width: 45px;
+  min-height: 42px;
   color: #000;
   background: #fff;
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px 0px 0px 5px;
 }
 
 .lang .btn:focus {
@@ -11596,15 +11634,18 @@ ul .registerListItem::before {
   color: #000;
   font-size: 18px;
   font-weight: bold;
+  padding-right: 16px;
+  border-radius: 5px 0px 0px 5px;
   text-transform: uppercase;
 }
 
 .lang .option {
+  padding-right: 16px;
+  border-radius: 5px 0px 0px 5px;
   text-transform: uppercase;
   font-weight: bold;
   display: block;
   color: #000;
-  background: #fff;
   font-size: 18px;
   -webkit-animation: mymove 1s;
           animation: mymove 1s;
@@ -11631,6 +11672,71 @@ ul .registerListItem::before {
   }
 }
 
+.soc {
+  position: absolute;
+  right: 0;
+  padding: 12px;
+  top: 100px;
+  max-width: 50px;
+  color: #000;
+  background: #fff;
+  border-radius: 5px 0 0 5px;
+}
+
+.soc .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.soc .select {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 700px) {
+  .soc {
+    display: none;
+  }
+}
+
+.yt {
+  top: 548px;
+  padding-right: 11px;
+  padding-left: 13px;
+}
+
+.soc:hover {
+  background-color: #dd2837;
+}
+
+.btnhvr:hover {
+  background-color: #dd2837;
+}
+
+.insta {
+  top: 600px;
+  padding-left: 10px;
+  padding-right: 9px;
+}
+
+.fb {
+  top: 653px;
+  min-width: 45px;
+  padding-right: 6px;
+}
+
+.mtem {
+  margin-top: 3em;
+}
+
+@media (min-width: 600px) {
+  .mtem {
+    margin-top: 7em;
+  }
+}
+
 .tabheader {
   font-size: 18px;
 }
@@ -11645,5 +11751,70 @@ ul .registerListItem::before {
 
 .capit {
   text-transform: lowercase;
+}
+
+@-webkit-keyframes animation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+.fade-in-appear {
+  -webkit-animation: animation 2s;
+          animation: animation 2s;
+  opacity: 1;
+}
+
+[data-src] {
+  min-width: 200px;
+  min-height: 200px;
+}
+
+@-webkit-keyframes grow-animation {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes grow-animation {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.grow-in {
+  transform: scale(0);
+}
+
+.grow-in-appear {
+  -webkit-animation: grow-animation 2s;
+          animation: grow-animation 2s;
+  transform: scale(1);
 }
 

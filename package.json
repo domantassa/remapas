@@ -40,6 +40,7 @@
     },
     "homepage": "https://github.com/domantassa/remapas#readme",
     "dependencies": {
-        "bootstrap": "^4.4.1"
+        "bootstrap": "^4.4.1",
+        "ekko-lightbox": "^5.3.0"
     }
 }
