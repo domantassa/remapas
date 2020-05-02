@@ -139,7 +139,7 @@
         </div>
         <div class="col-sm-6" style="z-index: -1">
             <div class="rCircle bigRCircle">
-                <img class="grow-in grow-in-appear car" src="{{asset('images/car.png')}}" alt="car.png">
+                <img class="grow-in grow-in-appear car" data-src="{{asset('images/coolcar.png')}}" alt="car.png">
             </div>
         </div>
     </div>

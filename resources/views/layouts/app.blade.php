@@ -15,13 +15,14 @@
   <link rel="stylesheet" href="{{asset('css/app.css')}}">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="https://www.remapas.eu/images/icon2.png">
+  <link rel="shortcut icon" href="{{asset('/images/icon2.png')}}">
   @yield('meta')
 </head>
 
 
 <body>
-        <div class="" style="overflow-x:hidden">
+        <img class="background-image " src="{{asset('images/smoke-background.png')}}"/>
+        <div class="layout" style="overflow-x:hidden">
         <div class="lang">
         <button class=" btn select py-2" type="button">@lang('kalba')</button> 
 

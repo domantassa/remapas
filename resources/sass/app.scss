@@ -39,6 +39,16 @@ body {
    color: #ffffff;
 }
 
+.background-image {
+    position:absolute;
+    left: 0;
+    right:0;
+    top:0;
+    bottom:0;
+    opacity: 0.1;
+    z-index: -500;
+}
+
 *{
     z-index: 10;
 }
@@ -812,7 +822,7 @@ ul {
             font-size:18px;
             font-weight: bold;
             padding: 0;
-            border-radius: 5px 0px 0px 5px; 
+            border-radius: 5px 0px 0px 0px; 
             text-transform: uppercase;
             max-width: 45px;
             min-height: 45px;
@@ -821,7 +831,7 @@ ul {
         .option{
             padding-right: 0;
             padding-left:0;
-            border: 5px 0px 0px 5px; 
+            border-radius: 0px 0px 0px 5px; 
             text-transform: uppercase;
             font-weight: bold;
             display:block;
