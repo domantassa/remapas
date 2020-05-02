@@ -106,11 +106,11 @@ body {
 
 
 .nav-link:hover {
-    transition: 0.1s;
-      border-bottom: 3px solid #dd2837;
-    transform: scale(1.1);
+    border-bottom: 3px solid #dd2837;
+    //transform: scale(1.1);
     @include for-phone-only {
         border-bottom: 3px solid rgba(255, 255, 255, 0);
+        
       }
 }
 
@@ -229,8 +229,8 @@ body {
 
 .cardButton:hover {
     background-color: rgb(8, 8, 8);
-    transition:  0.25s;
-    color: rgb(148, 133, 133);
+    transition:  0.4s;
+    color: white;
 }
 
 .rSection {
@@ -1023,12 +1023,12 @@ ul {
             animation: growin 0.5s;
 }
 
-.fade-in-entrance{
-    -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 0.5s; /* Firefox < 16 */
-        -ms-animation: fadein 0.5s; /* Internet Explorer */
-         -o-animation: fadein 0.5s; /* Opera < 12.1 */
-            animation: fadein 0.5s;
+.fade-in-entrance-small{
+    -webkit-animation: fadeinsmall 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeinsmall 3s; /* Firefox < 16 */
+        -ms-animation: fadeinsmall 3s; /* Internet Explorer */
+         -o-animation: fadeinsmall 3s; /* Opera < 12.1 */
+            animation: fadeinsmall 3s;
 }
 
 .fade-in-entrance-scroll {
@@ -1057,6 +1057,29 @@ ul {
 @-ms-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+@keyframes fadeinsmall {
+    from { opacity: 0; }
+    to   { opacity: 0.1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinsmall {
+    from { opacity: 0; }
+    to   { opacity: 0.1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinsmall {
+    from { opacity: 0; }
+    to   { opacity: 0.1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinsmall {
+    from { opacity: 0; }
+    to   { opacity: 0.1; }
 }
 
 @keyframes growin {
