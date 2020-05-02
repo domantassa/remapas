@@ -13,11 +13,11 @@ use Artesaos\SEOTools\Facades\SEOTools;
 |
 */
 
-Route::redirect('/','/en');
-Route::redirect('','/en');
-Route::redirect('/dyler','/en/dyler');
-Route::redirect('/kainos','/en/kainos');
-Route::redirect('/tools','/en/tools');
+Route::redirect('/','/lt');
+Route::redirect('','/lt');
+Route::redirect('/dyler','/lt/dyler');
+Route::redirect('/kainos','/lt/kainos');
+Route::redirect('/tools','/lt/tools');
 
 Route::group(['prefix' => '{locale}'],function($prefix)
 {
@@ -30,62 +30,73 @@ if($prefix!='en' && $prefix!='lt')
  return 1;
 }*/
     Route::get('/', function ($prefix) {
-
+   // return trans('Dirbame 24/7.');
         SEOTools::setTitle('Home');
-        //SEOTools::setDescription('This is my page description');
+        SEOTools::setDescription(trans('Individualus, saugus ir patikimas automobilių valdymo blokų modifikavimas.'));
         SEOTools::opengraph()->setUrl(url($prefix.'/dyler'));
-        SEOTools::setCanonical(url('/'));
+       // SEOTools::setCanonical(url('/'));
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@remapas.lt');
-        SEOTools::jsonLd()->addImage(asset('images/logotipas.png'));
+        SEOTools::jsonLd()->addImage(asset('images/icon2.png'));
 
         return view('views.main');
     })->name('home');
 Route::get('duk', function ($prefix) {
         SEOTools::setTitle('DUK');
-        //SEOTools::setDescription('Dažni klausimai');
+        SEOTools::setDescription(trans('Individualus, saugus ir patikimas automobilių valdymo blokų modifikavimas.'));
         SEOTools::opengraph()->setUrl(url($prefix.'/duk'));
-        SEOTools::setCanonical(url('/'));
+    //    SEOTools::setCanonical(url('/duk'));
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@remapas.lt');
-        SEOTools::jsonLd()->addImage(asset('images/logotipas.png'));
+        SEOTools::jsonLd()->addImage(asset('images/icon2.png'));
       //  App::setLocale();
         return view('views.duk');
     })->name('duk');
 
     Route::get('dyler', function ($prefix) {
         SEOTools::setTitle('Become a dealer');
-        //SEOTools::setDescription('Tapk remapas.lt dyleriu');
+        SEOTools::setDescription(trans('Individualus, saugus ir patikimas automobilių valdymo blokų modifikavimas.'));
         SEOTools::opengraph()->setUrl(url($prefix.'/dyler'));
-        SEOTools::setCanonical(url('/'));
+   //     SEOTools::setCanonical(url('/dyler'));
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@remapas.lt');
-        SEOTools::jsonLd()->addImage(asset('images/logotipas.png'));
+        SEOTools::jsonLd()->addImage(asset('images/icon2.png'));
         //App::setLocale();
         return view('views.tapk-dyleriu');
     })->name('dyler');
 
     Route::get('prices', function ($prefix) {
         SEOTools::setTitle('DUK');
-        //SEOTools::setDescription('Dažni klausimai');
+        SEOTools::setDescription(trans('Individualus, saugus ir patikimas automobilių valdymo blokų modifikavimas.'));
         SEOTools::opengraph()->setUrl(url($prefix.'/prices'));
-        SEOTools::setCanonical(url('/'));
+     //   SEOTools::setCanonical(url('/prices'));
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@remapas.lt');
-        SEOTools::jsonLd()->addImage(asset('images/logotipas.png'));
+        SEOTools::jsonLd()->addImage(asset('images/icon2.png'));
        // App::setLocale();
         return view('views.kainos');
     })->name('kainos');
     Route::get('tools', function ($prefix) {
         SEOTools::setTitle('Tools');
-        //SEOTools::setDescription('Dažni klausimai');
+        SEOTools::setDescription(trans('Individualus, saugus ir patikimas automobilių valdymo blokų modifikavimas.'));
         SEOTools::opengraph()->setUrl(url($prefix.'/tools'));
-        SEOTools::setCanonical(url('/'));
+     //   SEOTools::setCanonical(url('/tools'));
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@remapas.lt');
-        SEOTools::jsonLd()->addImage(asset('images/logotipas.png'));
+        SEOTools::jsonLd()->addImage(asset('images/icon2.png'));
         //App::setLocale();
         return view('views.tools');
     })->name('tools');
+    Route::get('contacts', function ($prefix) {
+        SEOTools::setTitle(trans('Contacts'));
+        SEOTools::setDescription(trans('Individualus, saugus ir patikimas automobilių valdymo blokų modifikavimas.'));
+        SEOTools::opengraph()->setUrl(url($prefix.'/contacts'));
+     //   SEOTools::setCanonical(url('/tools'));
+        SEOTools::opengraph()->addProperty('type', 'articles');
+        SEOTools::twitter()->setSite('@remapas.lt');
+        SEOTools::jsonLd()->addImage(asset('images/icon2.png'));
+        //App::setLocale();
+        return view('views.kontaktai');
+    })->name('kontaktai');
 
 });

@@ -624,6 +624,9 @@ ul {
     text-transform: uppercase;
     border-radius:25px  25px 0 0;
     font-size:14px;
+    @include for-phone-only{
+        border-radius:5px  5px 0 0;
+    }
     
 }
 @keyframes tab-transition{
@@ -695,7 +698,7 @@ ul {
 }
 .duk-card{
     .modal-header{
-       
+       border-radius: 15px 15px 0px 0px;
         H5
         {
            
@@ -798,7 +801,9 @@ ul {
     right:0;
     top:140px;
     max-width: 45px;
-    min-height: 42px;
+    min-height: 45px;
+    min-width: 45px;
+    padding:0;
     color:#000;
     background:#fff;
     border-radius: 5px 0px 0px 5px; 
@@ -806,14 +811,17 @@ ul {
             color:#000;
             font-size:18px;
             font-weight: bold;
-            padding-right: 16px;
+            padding: 0;
             border-radius: 5px 0px 0px 5px; 
             text-transform: uppercase;
-            
+            max-width: 45px;
+            min-height: 45px;
+            min-width: 45px;
         }
         .option{
-            padding-right: 16px;
-            border-radius: 5px 0px 0px 5px; 
+            padding-right: 0;
+            padding-left:0;
+            border: 5px 0px 0px 5px; 
             text-transform: uppercase;
             font-weight: bold;
             display:block;
@@ -832,6 +840,9 @@ ul {
             }
             animation: mymove 1s;
             display:none;
+            max-width: 45px;
+            min-height: 45px;
+            min-width: 45px;
 
         }
 }
@@ -1062,4 +1073,9 @@ ul {
 @-ms-keyframes growin {
     from { transform: scale(0); }
     to   { transform: scale(1); }
+}
+
+
+.phonehidden{
+    
 }

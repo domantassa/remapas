@@ -3,6 +3,8 @@
 
 @section('content')
 
+@include('forms.pildymo_forma')
+
 <style>
 
 .titleCenter {
@@ -97,7 +99,7 @@
 }
 
 </style>
-
+<div class="d-none">
 
 <div class="titleCenter"><h1 class="title bold Dmargin">@lang('Mūsų darbai')</h1></div>
 
@@ -220,5 +222,5 @@
         </div>
 
 </div>
-
+</div>
 @stop 

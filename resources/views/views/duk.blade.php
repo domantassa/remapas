@@ -9,7 +9,7 @@
             <h2 class=" " style="font-weight:bold" >@lang('Dažniausiai užduodami klausimai')</h2>
             
             <h3 class="red"> @lang('Jei dar turite klausimų, susisiekite!')</h3>
-            <a href="{{URL::to('susisiekite')}}" class="btn btnn btn-grey-light"> @lang('Susisiekite') </a>
+            <a href="{{route('kontaktai',App::getLocale() )}}" class="btn btnn btn-grey-light"> @lang('Susisiekite') </a>
         </div>
     <div class="col carr">
         <div class="">

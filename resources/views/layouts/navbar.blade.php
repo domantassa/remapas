@@ -8,11 +8,12 @@
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mt-2 mt-lg-0">
-      <li class="nav-item">
-        <a class="nav-link" href="{{route('dyler',App::getLocale())}}">@lang('Mūsų darbai') <span class="sr-only">(current)</span></a>
-      </li>
+
       <li class="nav-item">
         <a class="nav-link" href="{{route('home',App::getLocale())}}">@lang('Namai')</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{route('dyler',App::getLocale())}}">@lang('Mūsų darbai') <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://files.remapas.lt/">@lang('Failų servisas')</a>
@@ -33,7 +34,7 @@
         <a class="nav-link" href="{{route('duk',App::getLocale())}}">@lang('D.U.K')</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{route('dyler',App::getLocale())}}">@lang('Kontaktai')</a>
+        <a class="nav-link" href="{{route('kontaktai',App::getLocale())}}">@lang('Kontaktai')</a>
       </li>
     </ul>
   </div>

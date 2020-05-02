@@ -265,20 +265,20 @@
     <div class="row">
 
         <div class="col tab tab-begin" id="1"> 
-            <div class="rCircle">
+            <div class="rCircle mb-2">
                 <img class="icon" src="{{asset('images/info.png')}}" alt="info.png" style="top: 15px; ">
             </div>
-             <div class="p-2 tabheader" >@lang('Apie mus')</div>
+             <div class="p-2 tabheader hideOnPhones" >@lang('Apie mus')</div>
     
         </div>
         <div class="col tab" id="2"> 
-            <div class="rCircle">
+            <div class="rCircle mb-2">
                 <img class="icon" src="{{asset('images/dyler.png')}}" alt="dyler.png"  style="top: 22px;">
             </div>
-        <div  class="p-2 tabheader" >@lang('Tapk dyleriu')</div>
+        <div  class="p-2 tabheader hideOnPhones" >@lang('Tapk dyleriu')</div>
         </div>
-        <div class="col tab" id="3"> <div class="rCircle">                <img  class="icon" src="{{asset('images/pagalba.png')}}" alt="pagalba.png"  style="top: 14px;">    </div>
-         <div  class="p-2 tabheader" >@lang('Pagalbos sistema')</div>
+        <div class="col tab" id="3"> <div class="rCircle mb-2">                <img  class="icon" src="{{asset('images/pagalba.png')}}" alt="pagalba.png"  style="top: 14px;">    </div>
+         <div  class="p-2 tabheader hideOnPhones" >@lang('Pagalbos sistema')</div>
 
     </div>
       
