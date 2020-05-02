@@ -3,7 +3,6 @@
 
 <div class="contain">
 
-
     <a href="https://youtube.com"><div class="soc yt">
         <img class="socicon" src="{{asset('images/yt.png')}}" alt="yt.png" style=" width: 20px">
     </div></a>
@@ -333,6 +332,22 @@
 </div>
 </div>
 </div>
+
+<!-- 
+        Kontaktai
+.
+.
+.
+.
+.
+.
+.
+
+
+-->
+
+
+
 <script>
 
  $( ".tab" ).click(function() {
@@ -348,6 +363,16 @@
 
 
 });
+
+</script>
+
+
+<script>
+
+
+
 </script>
 
 @endsection
+
+</script>
