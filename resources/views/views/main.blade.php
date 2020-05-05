@@ -139,7 +139,7 @@
         </div>
         <div class="col-sm-6" style="z-index: -1">
             <div class="rCircle bigRCircle">
-                <img class="grow-in grow-in-appear car" data-src="{{asset('images/coolcar.png')}}" alt="car.png">
+                <img class="grow-in grow-in-appear car" src="{{asset('images/coolcar.png')}}" alt="car.png">
             </div>
         </div>
     </div>
@@ -292,6 +292,8 @@
 
                  
                      <div class="body">
+                     @lang('Esame Remapas performance – profesionali lengvųjų automobilių, sunkiasvorių transporto priemonių ir agro technikos programavimo kompanija. Savo paslaugas teikiame programuotojams visame pasaulyje, mūsų redaguotus failus naudoja profesionalūs chiptuneriai keturiuose žemynuose. Esame sukaupę ypatingai didelę patirtį, žinių ir kompetencijos. Mūsų darbas neapsiriboja  failų redagavimu ir pardavimu teoriniame lygmenyje, rinkoje išsiskiriame tuo, jog ne tik kuriame ir parduodame programas, bet ir patys jas testuojame savo galios didinimo labaratorijoje. Turime idealias sąlygas su savo redaguotais failais dirbti realiai, testuoti juos skirtinguose automobiliuose, dyno stendu, kelyje ir kt. Mūsų galios didinimo laboratorija yra orientuota į parduodamų failų kūrimą, jų kokybės gerinimą, pilną ištestavimą ir tobulinimą. Būtent todėl galime pasiūlyti aukščiausios kokybės, patikimus ir ištestuotus failus, profesionalią įrangą darbui bei 24/7 veikiančią pagalbą realiuoju laiku užtikrintam jūsų darbui.')
+                     <div class="d-none">
                      @lang('Suteikiame galimybę tapti mūsų partneriu versle, įsigyti profesionalią įrangą darbui, gauti pagalbą, patarimus, konsultacijas bei reikalingas pamokas tam, kad jūsų teikiamos paslaugos taptų aukščiausios kokybės. Šią galimybę suteikiame kiekvienam chiptuneriui, tiek pradedančiajam, tiek pažengusiam profesionalui. Pasinaudokite galimybe savo verslą pakelti į aukščiausią lygmenį, gauti profesionaliausius patarimus, atsakymus į visus klausimus be užuolankų. Padėsime ir konsultuosime visose srityse, pradedant profesionalia diagnostika bei automobilio techninės būklės įvertinimo prieš/po chip tuning, baigiant subtilybėmis nuskaitinėjant bei įrašinėjant failus, reklama, įvaizdžiu bei komunikacija su klientais. Trumpai tariant – jūsų problemos versle taps mūsų problemomis. Būtinos sąlygos – įrangos komplekto įsigijimas iš mūsų rankų bei metinė support narystė mūsų bendruomenėje. Kiekvienas partneris turi galimybę kartu tapti ir partneriu-atstovu, tokiu būdų gauti dar geresnes failų kainas ir daug kitų papildomų privalumų.')<br><br>
 
                      @lang('Noriu tapti partneriu (landing page į anketą, kurią reikia užpildyti norint tapti slave user). Anketoje turi nurodyti vardą pavardę, trumpai apie savo žinias ir patirtį, kokios pagalbos daugiausiai reikės iš mūsų, su kokiais auto žada dirbti ar dirba daugiausiai, kokia turima ir trūkstama įranga, kontaktai kaip susisiekti su juo.')<br><br>
@@ -299,7 +301,7 @@
                      @lang('Suteikiame galimybę tapti partneriu-atstovu – prekiauti mūsų failais bei įranga, tačiau tai daryti savo vardu. Suteiksime website platformą darbui, kurią galėsite naudoti savo reikmėms arba failų prekybai. Apie visus oficialius partnerius-atstovus skelbsime visuose savo reklamos kanaluose, taip padėsime jums augti. Tokiu būdu būdamas partneriu turėsite unikalią galimybę papildomai užsidirbti, gauti dideles nuolaidas įsigyjant failus savo reikmėms. Atkreipiame dėmesį, kad norint tapti partneriu-atstovu būtina įsigyti slave įrangos paketą. Dėl galimybės tapti partneriu-atstovu kreipkitės tiesiogiai į mus, kiekvienu atveju individualiai aptariamos abiems pusėms palankios sąlygos bei galimybės.')<br><br>
 
                      @lang('Tiek partneriu-atstovu, tiek partneriu gali tapti kiekvienas servisas ir pradedantysis. Prisijunkite prie augančios mūsų bendruomenes ir padėkite savo versui augti kartu su mumis, tapkite tikru profesionalu! Mes padėsime jums kasdien tobulėti galios didinimo srityje!')
-
+                    </div>
 
                      </div>
                 </div>

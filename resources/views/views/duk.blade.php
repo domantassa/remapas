@@ -14,7 +14,7 @@
     <div class="col carr">
         <div class="">
         <div class="rCircle bigRCircle">
-            <img class="car" src="{{asset('images/car.png')}}" alt="car.png">
+            <img class="car" src="{{asset('images/coolcar.png')}}" alt="lambo.png">
         </div>
         </div>
 </div>
@@ -42,7 +42,7 @@
         <div class="form duk-card">
     
             <div class="modal-header p-1 m-auto">
-                <h5 class="modal-title a-c " id="exampleModalLongTitle">@lang('1. Ar galios didinimas nepakenks automobilio varikliui, sankaba')</h5>
+                <h5 class="modal-title a-c " id="exampleModalLongTitle">@lang('1. Ar galios didinimas nepakenks automobilio varikliui, sankabai, dėžei ir kt.?')</h5>
             </div>
             
             <div class="modal-body p-2 m-auto">
