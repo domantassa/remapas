@@ -1,18 +1,19 @@
 @extends('layouts.app')
 @section('content')
+@include('layouts.header')
 
-<div class="contain">
-
-    <a href="https://youtube.com"><div class="soc yt">
-        <img class="socicon" src="{{asset('images/yt.png')}}" alt="yt.png" style=" width: 20px">
+<div class="contain" style="">
+    <div class="soci">
+        <a href="https://youtube.com"><div class=" soc yt">
+            <img class="socicon" src="{{asset('images/yt.png')}}" alt="yt.png" style=" width: 20px">
+        </div></a>
+        <a href="https://youtube.com"><div class="soc insta">
+            <img class="socicon" src="{{asset('images/ig.png')}}" alt="ig.png" style="width: 25px">
+        </div></a>
+        <a href="https://facebook.com"><div class="soc fb">
+            <img class="socicon " src="{{asset('images/fb.png')}}" alt="fb.png" style=" width: 15px; margin-left: 4px;">
     </div></a>
-    <a href="https://youtube.com"><div class="soc insta">
-        <img class="socicon" src="{{asset('images/ig.png')}}" alt="ig.png" style="width: 25px">
-    </div></a>
-    <a href="https://facebook.com"><div class="soc fb">
-        <img class="socicon " src="{{asset('images/fb.png')}}" alt="fb.png" style=" width: 15px; margin-left: 4px;">
-    </div></a>
-
+    </div>
     <div  class="row showOnPhones fade-in">
         <div class="phonecontent">
             <h1 class="title bold phoneh1">@lang('Sveiki atvykę į') <span class="redT bold">Chip Tunning</span> @lang('failų servisą!')</h1>
@@ -23,11 +24,10 @@
                 <img class="phonecar " data-src="{{asset('images/phonecar.png')}}" alt="phonecar.png" style="top: 22px; left: 13px">
             </div>
         </div>
-        
 
     </div>
 
-    <div class="showOnPhones ">
+    <div class="showOnPhones " >
         
     <div class="gSection phonecard">
         <div class="rCircle">
@@ -84,67 +84,73 @@
             </div>
             </div>
             <div class="row  rowCol">
-            <div class="col-2 card-round">
-            <div class="rCircle">
-                <img class="icon" src="{{asset('images/dyler.png')}}" alt="dyler.png" style="top: 22px; left: 13px">
-            </div>
-            <p class= "cardText">
-            @lang('Tapk dyleriu')
-            </p>
-            <div class="cardButtonDiv">
-                <button class="cardButton upper">
-                @lang('Plačiau')
-                </button>
-            </div>
-            </div>
-            <div class="col-2 card-round">
-            <div class="rCircle">
-                <img class="icon " src="{{asset('images/irankis.png')}}" alt="irankis.png" style="top: 14px; left: 13px">
-            </div>
-            <p class= "cardText">
-            @lang('Įrankiai')
-            </p>
-            <div class="cardButtonDiv">
-                <button class="cardButton upper ">
-                @lang('Plačiau')
-                </button>
-            </div>
-            </div>
-            <div class="col-2 card-round">
-            <div class="rCircle">
-                <img class="icon " src="{{asset('images/pagalba.png')}}" alt="pagalba.png" style="top: 14px; left: 13px">
-            </div>
-            <p class= "cardText upp">
-            @lang('Pagalbos sistema')
-            </p>
-            <div class="cardButtonDiv">
-                <button class="cardButton upper ">
-                @lang('Plačiau')
-                </button>
-            </div>
-            </div>
-            <div class="row rowCol">
-                <div class="col-3">
-                    <button class="redButton">
-                    @lang('Pildyti paraišką')
-                    </button>
-                </div>
-                <div class="col-4">
-                    <button class="redButton" style="margin-left: 15px">
-                    @lang('Mūsų darbai')
-                    </button>
-                </div>
-            </div>
+        
         </div>
         </div>
         <div class="col-sm-6" style="z-index: -1">
-            <div class="rCircle bigRCircle">
-                <img class="grow-in grow-in-appear car" src="{{asset('images/coolcar.png')}}" alt="car.png">
+            <div class=" bigRCircle">
+                <img class="grow-in grow-in-appear car" src="{{asset('images/lambo.png')}}" alt="car.png">
             </div>
         </div>
     </div>
   </div>
  
+    <div class="row hideOnPhones justify-content-center"  style="">
+                <div class="col-2 card-round">
+                    <div class="rCircle">
+                        <img class="icon" src="{{asset('images/dyler.png')}}" alt="dyler.png" style="top: 22px; left: 13px">
+                    </div>
+                    <p class= "cardText">
+                    @lang('Tapk dyleriu')
+                    </p>
+                    <div class="cardButtonDiv">
+                        <button class="cardButton upper">
+                        @lang('Plačiau')
+                        </button>
+                    </div>
+                    </div>
+                    <div class="col-2 card-round">
+                    <div class="rCircle">
+                        <img class="icon " src="{{asset('images/irankis.png')}}" alt="irankis.png" style="top: 14px; left: 13px">
+                    </div>
+                    <p class= "cardText">
+                    @lang('Įrankiai')
+                    </p>
+                    <div class="cardButtonDiv">
+                        <button class="cardButton upper ">
+                        @lang('Plačiau')
+                        </button>
+                    </div>
+                </div>
+                <div class="col-2 card-round">
+                    <div class="rCircle">
+                        <img class="icon " src="{{asset('images/pagalba.png')}}" alt="pagalba.png" style="top: 14px; left: 13px">
+                    </div>
+                    <p class= "cardText upp">
+                    @lang('Pagalbos sistema')
+                    </p>
+                    <div class="cardButtonDiv">
+                        <button class="cardButton upper ">
+                        @lang('Plačiau')
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row rowCol justify-content-center">
+                    <div class="col-3">
+                        <button class="redButton">
+                        @lang('Pildyti paraišką')
+                        </button>
+                    </div>
+                    <div class="col-3">
+                        <button class="redButton" style="margin-left: 15px">
+                        @lang('Mūsų darbai')
+                        </button>
+                    </div>
+                </div>
+    </div>
+
+  
   
     <div  class="row mtem fade-in">
     <div class="col-md-6 rSection">

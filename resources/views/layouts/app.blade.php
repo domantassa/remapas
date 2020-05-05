@@ -21,7 +21,7 @@
 
 
 <body>
-        <img class="background-image fade-in-entrance-small" src="{{asset('images/smoke-background.png')}}"/>
+        <!--<img class="background-image fade-in-entrance-small" src="{{asset('images/smoke-background.png')}}"/>-->
         <div class="layout" style="overflow-x:hidden">
         <div class="lang">
         <button class=" btn select py-2" type="button">@lang('kalba')</button> 

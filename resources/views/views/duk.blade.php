@@ -2,20 +2,24 @@
 @extends('layouts.app')
 
 @section('content')
+
+
+
+
+
 <div class="container m-auto" >
-    <div class="row " style="padding-top:5rem;padding-bottom:5rem">
+    
+    <div class="row " style="padding-top:5rem;padding-bottom:5rem;height:674px;">
         
-        <div class="col align-self-center">
+        <div class="col-8 align-self-center">
             <h2 class=" " style="font-weight:bold" >@lang('Dažniausiai užduodami klausimai')</h2>
             
             <h3 class="red"> @lang('Jei dar turite klausimų, susisiekite!')</h3>
             <a href="{{route('kontaktai',App::getLocale() )}}" class="btn btnn btn-grey-light"> @lang('Susisiekite') </a>
         </div>
-    <div class="col carr">
-        <div class="">
-        <div class="rCircle bigRCircle">
-            <img class="car" src="{{asset('images/coolcar.png')}}" alt="lambo.png">
-        </div>
+    <div class="col-4 carr">
+    <img class="car" src="{{asset('images/lambo.png')}}" alt="lambo.png">
+
         </div>
 </div>
 
