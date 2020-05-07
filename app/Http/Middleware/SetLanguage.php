@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Middleware;
-
+use Illuminate\Support\Facades\App;
 use Closure;
-
+use Illuminate\Support\Facades\Session;
 class SetLanguage
 {
     /**
@@ -15,11 +15,11 @@ class SetLanguage
      */
     public function handle($request, Closure $next)
     {
-        
+        /*
         if($request->locale == 'en' || $request->locale == 'lt' )
         {
          //  dd($request);
-        \App::SetLocale($request->locale);
+        
         return $next($request);
         }
         else{
@@ -27,8 +27,12 @@ class SetLanguage
             
        //  abort(404);
        //dd($request);
-        return $next($request);
-        }   
         
+        }   
+        */
+        if (Session::has('locale')) {
+            App::setLocale(Session::get('locale'));
+       }
+        return $next($request);
     }
 }

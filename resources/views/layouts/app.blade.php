@@ -37,7 +37,7 @@
 <div class="lang">
   <button class=" btn select py-1 a-c" type="button" style="width:100%;height:100%">@lang('kalba')</button> 
  <!-- <a class="option btn  a-c" style="width:100%" href="{{route(Route::currentRouteName(),__('kalba2'))}}" >{{__('kalba2')}}</button>-->
- <a class="option btn  a-c" style="width:100%" href="{{route(Route::currentRouteName(),__('kalba2'))}}" >{{__('kalba2')}}</button>
+ <a class="option btn  a-c" style="width:100%" href="{{route('lang',__('kalba2'))}}" >{{__('kalba2')}}</button>
 </div>
 
 

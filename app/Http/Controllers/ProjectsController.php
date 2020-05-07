@@ -32,7 +32,7 @@ class ProjectsController extends Controller
         
         return view('views.musu-darbai')->with('objects',$objects);
     }
-    public function show($id,$locale)
+    public function show($id)
     {
         $object=Project::find($id);
         SEOTools::setTitle(trans('Mūsų darbai'));

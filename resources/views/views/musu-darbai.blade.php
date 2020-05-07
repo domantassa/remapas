@@ -4,7 +4,7 @@
 <div class="phead">
     <div class="container">
 <h1 class=" mt-2" style="font-weight:bold;">OUR TUNING PROJECTS</h1>
-@lang('Kainos')
+
     </div>
 </div>
 
@@ -19,7 +19,7 @@
         @foreach($objects as $object)
            <div class="col">
                 <div class="work-card">
-                    <a href="{{route('project.show',['id' => $object->id,'locale' => App::getLocale()])}}">
+                    <a href="{{route('project.show',['id' => $object->id])}}">
                         <img src="{{asset($object->image)}}">
                         <div class="body">
                             <span>{{$object->title}}</span>
