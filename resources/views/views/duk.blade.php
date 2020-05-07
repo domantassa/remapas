@@ -3,7 +3,7 @@
 
 @section('content')
 
-
+@include('layouts.header')
 
 
 
@@ -11,7 +11,7 @@
     
     <div class="row " style="padding-top:5rem;padding-bottom:5rem;height:674px;">
         
-        <div class="col-8 align-self-center">
+        <div class="col-8 align-self-top">
             <h2 class=" " style="font-weight:bold" >@lang('Dažniausiai užduodami klausimai')</h2>
             
             <h3 class="red"> @lang('Jei dar turite klausimų, susisiekite!')</h3>

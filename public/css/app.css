@@ -10961,12 +10961,12 @@ body {
 }
 
 .nav-link:hover {
-  border-bottom: 3px solid #dd2837;
+  border-bottom: 3px solid #ffffff;
 }
 
 @media (max-width: 599px) {
   .nav-link:hover {
-    border-bottom: 3px solid rgba(255, 255, 255, 0);
+    border-bottom: 0px solid rgba(255, 255, 255, 0);
   }
 }
 
@@ -11564,22 +11564,24 @@ ul .registerListItem::before {
 }
 
 .content-active {
+  -webkit-animation: animation 1s;
+          animation: animation 1s;
   min-height: 300px;
   display: block !important;
 }
 
 .active {
-  border-bottom: 3px solid #dd2837;
-  transform: scale(1.1);
+  border-bottom: 3px solid #fff;
 }
 
 @media (max-width: 599px) {
   .active {
-    border-bottom: 3px solid rgba(255, 255, 255, 0);
+    border-bottom: 0px solid rgba(255, 255, 255, 0);
   }
 }
 
 .content {
+  opacity: 1;
   display: none;
 }
 
@@ -11640,6 +11642,7 @@ ul .registerListItem::before {
   font-weight: bold;
   font-size: 20px;
   color: #dd2837;
+  white-space: normal;
 }
 
 .tools .body {
@@ -11653,19 +11656,10 @@ ul .registerListItem::before {
 }
 
 .failu-servisas {
-  min-height: 800px;
-  background: url("http://127.0.0.1:8000/images/fonasapie.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  min-height: 350px;
   background-position: center;
-  /* max-width: 1000px;*/
+  background-size: cover;
   margin-bottom: 5rem;
-}
-
-.failu-servisas .overlay {
-  background: rgba(40, 40, 40, 0.5);
-  height: 100%;
-  width: 100%;
 }
 
 .failu-servisas .title {
@@ -11707,7 +11701,7 @@ ul .registerListItem::before {
 
 .lang .select {
   color: #000;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   padding: 0;
   border-radius: 5px 0px 0px 0px;
@@ -11725,7 +11719,7 @@ ul .registerListItem::before {
   font-weight: bold;
   display: block;
   color: #000;
-  font-size: 18px;
+  font-size: 22px;
   -webkit-animation: mymove 1s;
           animation: mymove 1s;
   display: none;
@@ -11793,7 +11787,7 @@ ul .registerListItem::before {
 }
 
 .soc:hover {
-  background-color: #dd2837;
+  background-color: #fff;
 }
 
 .btnhvr:hover {
@@ -12100,5 +12094,112 @@ ul .registerListItem::before {
   .hcontainer {
     display: none;
   }
+}
+
+.ourwork a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.ourwork .work-card {
+  height: 100%;
+  border-radius: 5px;
+  background-color: #282828;
+  margin: 15px;
+}
+
+.ourwork .work-card:hover {
+  -webkit-animation: hightlight 0.25s;
+          animation: hightlight 0.25s;
+  opacity: 0.5;
+}
+
+@-webkit-keyframes hightlight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.5;
+  }
+}
+
+@keyframes hightlight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.5;
+  }
+}
+
+.ourwork .work-card .body {
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.ourwork .work-card .body span {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.ourwork .work-card .body .data {
+  font-size: 10px;
+  display: inline;
+}
+
+.ourwork .work-card .body .data img {
+  width: auto;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 0;
+}
+
+.ourwork .col {
+  padding: 0;
+  flex: 0 0 25%;
+  max-width: 25%;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 992px) {
+  .ourwork .col {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+}
+
+@media (max-width: 599px) {
+  .ourwork .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.ourwork img {
+  height: 150px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .ourwork img {
+    height: 95px;
+  }
+}
+
+@media (max-width: 599px) {
+  .ourwork img {
+    height: 150px;
+  }
+}
+
+.phead {
+  background-color: #282828;
+  padding: 50px 0;
+  margin-bottom: 25px;
 }
 

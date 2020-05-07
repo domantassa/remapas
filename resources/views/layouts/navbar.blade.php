@@ -13,7 +13,7 @@
         <a class="nav-link" href="{{route('home',App::getLocale())}}">@lang('Namai')</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{route('dyler',App::getLocale())}}">@lang('Mūsų darbai') <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{{route('musu.darbai',App::getLocale())}}">@lang('Mūsų darbai') <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://files.remapas.lt/">@lang('Failų servisas')</a>

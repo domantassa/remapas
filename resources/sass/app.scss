@@ -108,10 +108,10 @@ body {
 
 
 .nav-link:hover {
-    border-bottom: 3px solid #dd2837;
+    border-bottom: 3px solid #ffffff;
     //transform: scale(1.1);
     @include for-phone-only {
-        border-bottom: 3px solid rgba(255, 255, 255, 0);
+        border-bottom: 0px solid rgba(255, 255, 255, 0);
         
       }
 }
@@ -670,21 +670,22 @@ ul {
    display:block !important;
 }
 .content-active{
+    animation: animation 1s;
     min-height:300px;
      display:block !important;
 }
 
 
 .active {
-      border-bottom: 3px solid #dd2837;
-    transform: scale(1.1);
+      border-bottom: 3px solid #fff;
+    //transform: scale(1.1);
     @include for-phone-only {
-        border-bottom: 3px solid rgba(255, 255, 255, 0);
+        border-bottom: 0px solid rgba(255, 255, 255, 0);
       }
 }
 
 .content{
-    
+    opacity:1;
     display:none;
 }
 .tab-content{
@@ -752,6 +753,7 @@ ul {
         font-weight: bold;
         font-size:20px;
         color:$red;
+            white-space: normal;
 
     }
     .body{
@@ -770,20 +772,11 @@ ul {
   
     
 
-    min-height: 800px;
-    background:url($url+"images/fonasapie.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    min-height: 350px;
+
     background-position: center;
-  /* max-width: 1000px;*/
-    .overlay{
-        
-        background: rgb(40, 40, 40,0.5);
-        height:100%;
-        width:100%;
-  
-    }
-    
+    background-size: cover;
+
     .title{
        
     
@@ -819,13 +812,14 @@ ul {
     max-width: 45px;
     min-height: 45px;
     min-width: 45px;
+    
     padding:0;
     color:#000;
     background:#fff;
     border-radius: 5px 0px 0px 5px; 
             .select{
             color:#000;
-            font-size:18px;
+            font-size:22px;
             font-weight: bold;
             padding: 0;
             border-radius: 5px 0px 0px 0px; 
@@ -843,7 +837,7 @@ ul {
             display:block;
             color:#000;
             //background:#fff;
-            font-size:18px;
+            font-size:22px;
             @keyframes mymove{
                 from{
                     
@@ -902,7 +896,7 @@ ul {
 }
 
 .soc:hover {
-    background-color: $red;
+    background-color: $white;
 }
 
 .btnhvr:hover {
@@ -1155,4 +1149,89 @@ ul {
 
 }
 
+.ourwork{
+    a{
+        color:$white;
+        text-decoration: none;
+    }
+    .work-card{
+        height:100%;
+        &:hover{
+            @keyframes hightlight{
+                from{opacity:1;}
+                to{opacity:0.5;}
+            }
+            animation: hightlight 0.25s;
+            opacity:0.5;
+        }
+        border-radius:5px;
+        background-color: $grey-light;
+        margin:15px;
+        .body{
+            padding: 10px 0px;
+            text-align: center;
+            span{
+                padding-bottom:10px;
+                
+                font-weight:bold;
+            }
+            .data{
+                font-size:10px;
+                img{
+                    
+                    width:auto;
+                    height:10px;
+                    margin-right:5px;
+                    border-radius: 0;
+                }
+                display: inline;
+            }
+        }
+        
+    }
+    .col{
+        padding: 0;
+        flex: 0 0 25%;
+        max-width: 25%;
+        margin-bottom:25px;
+    }
+
+
+  
+    @include for-bt-tablet{
+        .col{
+           
+            flex: 0 0 33%;
+            max-width: 33%;
+        }
+    }
+    @include for-phone-only{
+        .col{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+img{
+    height:150px;
+    @include for-bt-tablet{
+    
+        height:95px;
+    
+    }
+    @include for-phone-only{
+    
+        height:150px;
+    
+    }
+    width: 100%;
+    border-radius: 5px   5px 0  0;
+    object-fit: cover;
+}
+
+  }
+.phead{
+    background-color: $grey-light;
+    padding:50px 0;
+    margin-bottom:25px;
+}
 

@@ -18,13 +18,15 @@ class SetLanguage
         
         if($request->locale == 'en' || $request->locale == 'lt' )
         {
+         //  dd($request);
         \App::SetLocale($request->locale);
         return $next($request);
         }
         else{
          //   $request->locale= 'en';
-
-        // abort(404);
+            
+       //  abort(404);
+       //dd($request);
         return $next($request);
         }   
         

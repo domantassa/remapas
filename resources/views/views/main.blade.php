@@ -21,7 +21,7 @@
             @lang('Visos programos yra patikrintos naudojant dyno stendą. Dirbame') <span class="redT bold"> 24/7</span>. @lang('Registruokitės ir gaukite 20 kreditų') <span class="redT bold"> @lang('nemokamai') </span>!</p>
             <button class="phonebtn">@lang('Mūsų darbai')</button>
             <div class="phonephoto">
-                <img class="phonecar " data-src="{{asset('images/phonecar.png')}}" alt="phonecar.png" style="top: 22px; left: 13px">
+                <img class="phonecar " src="{{asset('images/phonecar.png')}}" alt="phonecar.png" style="top: 22px; left: 13px">
             </div>
         </div>
 
@@ -292,8 +292,8 @@
 
     <div  class="row">
         
-            <div class="tab-content failu-servisas" >
-            <div class="overlay">
+            <div class="tab-content failu-servisas" style="background-image: linear-gradient(rgba(22, 22, 22, 0.95),rgba(22, 22, 22, 0.95)),url({{asset('images/ourwork/AUDIRS7.png')}});" >
+            
             <div id="content-1" class="content content-begin p-5"> 
 
                  
@@ -331,8 +331,8 @@
                      </div>
                 </div>
                 </div>
-            </div>
-            </div>
+
+            
 
 
         

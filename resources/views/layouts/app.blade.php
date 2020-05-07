@@ -21,15 +21,9 @@
 
 
 <body>
-        <!--<img class="background-image fade-in-entrance-small" src="{{asset('images/smoke-background.png')}}"/>-->
+        
         <div class="layout" style="overflow-x:hidden">
-        <div class="lang">
-        <button class=" btn select py-2" type="button">@lang('kalba')</button> 
-
-<a class="option btn a-c" style="width:100%" href="{{route(Route::currentRouteName(),__('kalba2'))}}" >{{__('kalba2')}}</a>
-
-
-</div>
+        
 
             @include('layouts.navbar')
             <script src="js/app.js"></script>
@@ -41,8 +35,9 @@
 </html>
 
 <div class="lang">
-  <button class="btnhvr btn select py-2 a-c" type="button" style="width:100%;height:100%">@lang('kalba')</button> 
-  <a class="option btn btnhvr a-c" style="width:100%" href="{{route(Route::currentRouteName(),__('kalba2'))}}" >{{__('kalba2')}}</button>
+  <button class=" btn select py-1 a-c" type="button" style="width:100%;height:100%">@lang('kalba')</button> 
+ <!-- <a class="option btn  a-c" style="width:100%" href="{{route(Route::currentRouteName(),__('kalba2'))}}" >{{__('kalba2')}}</button>-->
+ <a class="option btn  a-c" style="width:100%" href="{{route(Route::currentRouteName(),__('kalba2'))}}" >{{__('kalba2')}}</button>
 </div>
 
 

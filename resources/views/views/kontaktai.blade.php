@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('content')
 
-
 <div class="container" style="overflow-x:hidden"><h1 class="a-c bold">Kontaktai</h1></div>
 <div  class="row mtem fade-in" style="margin-top:1rem">
 

@@ -11,7 +11,8 @@ use Artesaos\SEOTools\Facades\SEOTools;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
+*/   
+ Route::get('darbai','ProjectsController@index')->name('projects');
 
 Route::redirect('/','/lt');
 Route::redirect('','/lt');
@@ -21,6 +22,7 @@ Route::redirect('/tools','/lt/tools');
 
 Route::group(['prefix' => '{locale}'],function($prefix)
 {
+
     Route::post('dyler','FormsController@tapk_dyleriu')->name('form.dyler');
     /*
 if($prefix!='en' && $prefix!='lt')
@@ -31,6 +33,11 @@ if($prefix!='en' && $prefix!='lt')
 }*/
     Route::get('/', function ($prefix) {
    // return trans('Dirbame 24/7.');
+        if($prefix!="lt" && $prefix!="en")
+        {
+        
+            abort(404);
+        }
         SEOTools::setTitle('Home');
         SEOTools::setDescription(trans('Individualus, saugus ir patikimas automobilių valdymo blokų modifikavimas.'));
         SEOTools::opengraph()->setUrl(url($prefix.'/dyler'));
@@ -98,5 +105,19 @@ Route::get('duk', function ($prefix) {
         //App::setLocale();
         return view('views.kontaktai');
     })->name('kontaktai');
-
+   /* Route::get('our-work', function ($prefix) {
+        SEOTools::setTitle(trans('Mūsų darbai'));
+        SEOTools::setDescription(trans('Individualus, saugus ir patikimas automobilių valdymo blokų modifikavimas.'));
+        SEOTools::opengraph()->setUrl(url($prefix.'/our-work'));
+     //   SEOTools::setCanonical(url('/tools'));
+        SEOTools::opengraph()->addProperty('type', 'articles');
+        SEOTools::twitter()->setSite('@remapas.lt');
+        SEOTools::jsonLd()->addImage(asset('images/icon2.png'));
+        //App::setLocale();
+        return view('views.musu-darbai');
+    })->name('musu.darbai');
+    */
+    
+    Route::get('our-work','ProjectsController@index')->name('musu.darbai');
+    Route::get('our-work/{id}','ProjectsController@show')->name('project.show');
 });
