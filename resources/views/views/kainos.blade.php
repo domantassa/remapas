@@ -40,21 +40,35 @@
         
             <div class="tab-content tools p-3">
                 <div id="content-1" class="content content-begin a-c">
-                    <span class="title">
-                        @lang('')
-                    </span>
                     <p class="body">
-                        
-                    </p>
+                    <div>Automobiliams iki 2016 Stage 1 nuo 80eur</div>
+                    <div>Automobiliams nuo 2016 Stage 1 nuo 90eur</div>
+                    <div>Automobiliams iki 2016 Stage 2 nuo 120eur</div>
+                    <div>Automobiliams nuo 2016 Stage 2 nuo 140eur</div>
+                    <div>Automobiliams iki 2016 Stage 3 nuo 250eur</div>
+                    <div>Automobiliams nuo 2016 Stage 3 nuo 300eur</div>
+                
+</p>
                 </div>
-                <div id="content-2" class="content a-c">adng Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+                <div id="content-2" class="content a-c">
+                <p class="body">
+                    <div>Automobiliams iki 2016 Stage 1 nuo 60eur</div>
+                    <div>Automobiliams nuo 2016 Stage 1 nuo 80eur</div>
+                    <div>Automobiliams iki 2016 Stage 2 nuo 70eur</div>
+                    <div>Automobiliams nuo 2016 Stage 2 nuo 100eur</div>
+                    <div>Automobiliams iki 2016 Stage 3 nuo 150eur</div>
+                    <div>Automobiliams nuo 2016 Stage 3 nuo 200eur</div>
+                </p>
                 </div>
                 <div id="content-3" class="content a-c">
-                Lorem Ipsum is simasdmmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.   
+                    <p class="body">
+                    </p>
                 </div>
                 <div id="content-4" class="content a-c">
-                Lorem Ipsum iasd dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </div>  
+                <p class="body">
+                <div >Stage 1 nuo 100eur</div>
+                </p>    
+            </div>  
                 <div style="text-align:center"><a href="" style="" class=" btn btnn btn-grey">Susisiekti</a></div>
             </div>
 

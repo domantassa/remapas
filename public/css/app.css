@@ -12203,3 +12203,50 @@ ul .registerListItem::before {
   margin-bottom: 25px;
 }
 
+.project-single {
+  padding-top: 15px;
+  background-color: #282828;
+  max-width: 600px;
+}
+
+.project-single img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+}
+
+.project-single .details {
+  padding: 35px 0;
+}
+
+.project-single .details .col,
+.project-single .details .col-md {
+  text-align: center;
+  padding: 0;
+}
+
+.project-single .details .dat {
+  text-align: center;
+  border-top: solid 1px #e8e8e8;
+  border-right: solid 1px #e8e8e8;
+  border-bottom: solid 1px #f7f9fb;
+  background-color: #f7f9fb;
+  padding-top: 13px;
+  color: #262528;
+  max-height: 50px;
+  min-height: 50px;
+}
+
+.project-single .details .de {
+  text-align: center;
+  padding-top: 13px;
+  max-height: 50px;
+  min-height: 50px;
+  background-color: #161616;
+  border-top: solid 1px #161616;
+  border-right: solid 1px #161616;
+  border-bottom: solid 1px #161616;
+}
+
