@@ -9,9 +9,9 @@
 <div class="container project-single fade-in" >
 
     <div class="row " >
-        
+           
     <div class="col-md-12">
-            <img src="{{asset($object->image)}}" style="">
+            <img class='lightbox' src="{{asset($object->image)}}" style="">
         </div>
         
 
@@ -41,7 +41,32 @@
     </div>
 </div>
 
+<div class="lightboxx" style="display:none">
+    <div class="overlay d-flex align-items-center">
+    <div class="row">
+    <div class="photo "><img id="photobox" src="">
+    <div class="exitimg"><div class="" id="close">×</div></div>
+    </div>
+    </div>
+    
+    </div>
+    
 
+</div> 
 
+<script>
 
+$(".lightbox").click(function(){
+
+$("#photobox").attr('src',$(".lightbox").attr('src'));
+$(".lightboxx").toggle();
+
+});
+$("#close").click(function(){
+
+$(".lightboxx").toggle();
+
+});
+</script>
 @stop
+

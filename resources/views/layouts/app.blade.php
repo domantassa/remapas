@@ -107,8 +107,11 @@ faders.forEach(fader => {
 //ObserverItems-----------------------------------------------------------
 
 $(function() {
+  //  alert()
 	$c=document.location;
+    
 	$c='nav a[href="'+$c+'"]';
+  //  alert($c);
   $($c).addClass('active');
 });
 

@@ -10,7 +10,7 @@
     <ul class="navbar-nav mt-2 mt-lg-0">
 
       <li class="nav-item">
-        <a class="nav-link" href="{{route('home')}}">@lang('Namai')</a>
+        <a class="nav-link" href="{{route('home')}}/">@lang('Namai')</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{route('musu.darbai')}}">@lang('Mūsų darbai') <span class="sr-only">(current)</span></a>

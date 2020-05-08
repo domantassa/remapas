@@ -8,7 +8,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" style="max-width:1140px !important">
 
     
 
