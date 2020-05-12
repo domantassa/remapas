@@ -93,7 +93,7 @@ $s="'";
                             <input name="Company's website" type="text" class="form-control form-text" placeholder='{{ __("Company".$s."s website") }}'>
                         </div>
                         <div class="form-group">    
-                            <input name="Company desciption" type="text" class="form-control form-text" placeholder="{{ __('Company desciption') }}">
+                            <textarea name="Company desciption" type="text" class="form-control form-text" placeholder="{{ __('Company desciption') }}"></textarea>
                         </div>
 
                         <div class="form-group">    

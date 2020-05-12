@@ -11075,6 +11075,7 @@ body {
 }
 
 .redButton {
+  text-align: center;
   box-sizing: border-box;
   background-color: #dd2837;
   color: white;
@@ -11087,6 +11088,10 @@ body {
   margin-top: 5px;
   width: 310px;
   letter-spacing: 2px;
+}
+
+.redButton:hover {
+  color: inherit;
 }
 
 .cardButton:hover {
@@ -11241,6 +11246,23 @@ ul .registerListItem::before {
   }
 }
 
+.mobile-show-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-show-btn {
+    display: inline-block;
+    margin-bottom: 1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-hide-btn {
+    display: none;
+  }
+}
+
 .phonecontent {
   /* margin: 2em;*/
   padding: 2em;
@@ -11290,6 +11312,10 @@ ul .registerListItem::before {
   width: 400px;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .a-c {
   text-align: center;
   margin: auto;
@@ -11337,7 +11363,7 @@ ul .registerListItem::before {
   color: #fff;
   background: #282828;
   border: none;
-  border-radius: 50px;
+  border-radius: 17px;
 }
 
 .form-select {
@@ -11358,7 +11384,7 @@ ul .registerListItem::before {
   color: #fff;
   background: #282828;
   border: none;
-  border-radius: 50px;
+  border-radius: 17px;
 }
 
 .form-col-group {

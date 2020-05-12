@@ -19,13 +19,13 @@
         <a class="nav-link" href="https://files.remapas.lt/">@lang('Failų servisas')</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{route('dyler' )}}">@lang('Tapti dyleriu')</a>
+        <a class="nav-link" href="{{route('dyler' )}}">@lang('Tapk partneriu')</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{route('tools')}}">@lang('Įrankiai')</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://files.remapas.lt/">@lang('Remapas support')</a>
+        <a class="nav-link" href="https://files.remapas.lt/">@lang('Pagalbos sistema')</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{route('kainos')}}">@lang('Kainos')</a>

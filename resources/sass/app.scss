@@ -31,6 +31,9 @@
   @mixin for-big-desktop-up {
     @media (min-width: 1800px) { @content; }
   }
+  @mixin for-md{
+    @media (max-width: 768px) { @content; }
+  }
 
 button:focus {outline:0;}
 
@@ -219,6 +222,7 @@ body {
 }
 
 .redButton {
+    text-align: center;
     box-sizing: border-box;
     background-color: $red;
     color: white;
@@ -231,6 +235,9 @@ body {
     margin-top: 5px;
     width: 310px;
     letter-spacing: 2px;
+    &:hover{
+        color: inherit;
+    }
 }
 
 .cardButton:hover {
@@ -377,7 +384,18 @@ ul {
         left: 0;
       }
 }
-
+.mobile-show-btn{
+    display: none;
+    @include for-md{
+        display: inline-block;
+        margin-bottom:1rem !important;
+    }
+}
+.mobile-hide-btn{
+    @include for-md{
+        display: none;
+    }
+}
 
 .phonecontent {
    /* margin: 2em;*/
@@ -470,6 +488,10 @@ ul {
 
     
 }
+a:hover{
+    text-decoration: none;
+    
+}
 .a-c{
     text-align:center;
     margin:auto;
@@ -516,7 +538,7 @@ ul {
     color:$white;
     background:$grey-light;
     border:none;
-    border-radius:50px;
+    border-radius:17px;
     
 }
 .form-select {
@@ -537,7 +559,7 @@ ul {
     color:$white;
     background:$grey-light;
     border:none;
-    border-radius:50px;
+    border-radius:17px;
     
 }
 
